@@ -8,6 +8,7 @@ import VideoSection from "./components/VideoSection";
 import TabbedSection from "./components/TabbedSection";
 import StatsSection from "./components/StatsSection";
 import EventSchedule from "./components/EventSchedule";
+import MainGuest from "./components/MainGuest";
 function App() {
   useEffect(() => {
     (async () => {
@@ -45,7 +46,7 @@ function App() {
         <EventSchedule />
       </div>
       <div className="py-10">
-        <TabbedSection />
+        <MainGuest />
       </div>
     </>
   );
