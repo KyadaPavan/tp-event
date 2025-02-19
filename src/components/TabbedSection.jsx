@@ -39,7 +39,7 @@ const TabbedSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveTab((prev) => (prev === tabs.length ? 1 : prev + 1));
-    }, 5000); // Change tab every 5 seconds
+    }, 3000); // Change tab every 5 seconds
 
     return () => clearInterval(interval);
   }, []);
@@ -74,7 +74,7 @@ const TabbedSection = () => {
                   initial={{ x: 100, opacity: 0 }}
                   animate={{ x: 0, opacity: 1 }}
                   exit={{ x: -100, opacity: 0 }}
-                  transition={{ duration: 0.5 }}
+                  transition={{ duration: 0.2 }}
                   className="flex flex-col items-center justify-between w-full gap-10 md:gap-20 md:flex-row"
                 >
                   {/* Image */}
