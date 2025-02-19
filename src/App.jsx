@@ -4,9 +4,9 @@ import Eyes from "./components/Eyes";
 import Navbar from "./components/Navbar";
 import { useEffect } from "react";
 import ZoomEffect from "./components/ZoomEffect";
-import Parallex from "./components/Parallex";
-import HomeSection from "./components/HomeSection";
 import VideoSection from "./components/VideoSection";
+import TabbedSection from "./components/TabbedSection";
+import StatsSection from "./components/StatsSection";
 function App() {
   useEffect(() => {
     (async () => {
@@ -33,6 +33,12 @@ function App() {
       </div>
       <div className="py-10">
         <VideoSection />
+      </div>
+      <div className="py-10">
+        <TabbedSection />
+      </div>
+      <div className="py-10">
+        <StatsSection />
       </div>
     </>
   );

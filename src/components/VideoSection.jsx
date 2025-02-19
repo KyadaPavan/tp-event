@@ -23,16 +23,16 @@ export default function VideoSection() {
     <div className="flex justify-center items-center min-h-screen bg-[#002324] p-4 md:p-6 overflow-hidden">
       <div className="w-full max-w-[90%] md:max-w-[80%] p-6 md:p-8 text-center bg-gradient-to-r from-orange-500 to-green-400 rounded-2xl">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#002324] py-2">
-          What is Shift
+          What is FTX
         </h2>
         <p className="py-4 mt-3 text-base text-gray-900 md:text-lg">
-          <strong>Infobip Shift</strong> is a conference that gathers the global
+          <strong>Infobip FTX</strong> is a conference that gathers the global
           developer community, delivering interactive, engaging, and exciting
           content in a one-of-a-kind atmosphere. With a{" "}
           <strong className="font-bold">
             focus on a unique and enjoyable experience
           </strong>
-          , Shift has become one of the biggest developer events in Europe.
+          , FTX has become one of the biggest developer events in India.
         </p>
 
         {/* Video Thumbnail with Play Button */}
@@ -82,7 +82,7 @@ export default function VideoSection() {
 
             <iframe
               className="w-full rounded-lg shadow-lg aspect-video"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/7BmxRYAjAnU?si=OunjWt6OSN3owbT9"
               allow="autoplay; fullscreen"
             ></iframe>
           </div>
