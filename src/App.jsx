@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import ZoomEffect from "./components/ZoomEffect";
 import Parallex from "./components/Parallex";
 import HomeSection from "./components/HomeSection";
+import VideoSection from "./components/VideoSection";
 function App() {
   useEffect(() => {
     (async () => {
@@ -29,6 +30,9 @@ function App() {
       </div>
       <div>
         <ZoomEffect />
+      </div>
+      <div className="py-10">
+        <VideoSection />
       </div>
     </>
   );
