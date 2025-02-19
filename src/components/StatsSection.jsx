@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 const stats = [
   { value: "4000+", label: "In-Person Attendees" },
   { value: "600+", label: "Companies Present" },
-  { value: "80+", label: "Speakers" },
-  { value: "6", label: "Stages" },
-  { value: "3", label: "Days" },
+  { value: "30+", label: "Speakers" },
+  { value: "30+", label: "Sessions" },
+  { value: "1", label: "Day" },
   { value: "1", label: "Unique Experience" },
 ];
 

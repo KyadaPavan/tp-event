@@ -7,6 +7,7 @@ import ZoomEffect from "./components/ZoomEffect";
 import VideoSection from "./components/VideoSection";
 import TabbedSection from "./components/TabbedSection";
 import StatsSection from "./components/StatsSection";
+import EventSchedule from "./components/EventSchedule";
 function App() {
   useEffect(() => {
     (async () => {
@@ -39,6 +40,12 @@ function App() {
       </div>
       <div className="py-10">
         <StatsSection />
+      </div>
+      <div className="py-10">
+        <EventSchedule />
+      </div>
+      <div className="py-10">
+        <TabbedSection />
       </div>
     </>
   );
