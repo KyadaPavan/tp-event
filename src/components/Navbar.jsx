@@ -36,7 +36,8 @@ export default function Navbar() {
     { id: 2, title: "Our work", href: "presentation" },
     { id: 3, title: "About us", href: "ochi-team" },
     { id: 4, title: "Insights", href: "insights" },
-    { id: 5, title: "Contact us", href: "contact" },
+    { id: 5, title: "Pricing", href: "pricing" },
+    { id: 6, title: "Contact us", href: "contact" },
   ];
 
   return (
@@ -45,26 +46,24 @@ export default function Navbar() {
         variants={navVariants}
         className={`${
           isScrollingDown ? "-top-20" : "top-0"
-        } max-w-[90%] w-full h-[8vh] px-4 fixed z-50 backdrop-blur-[7px] hidden items-center justify-between lg:flex mx-auto`}
+        }  w-full   h-[8vh] px-4 fixed gap-[20%] z-50 backdrop-blur-[7px] hidden items-center justify-evenly md:flex `}
         animate={hidden ? "hidden" : "visible"}
       >
-        <div className="w-[50%] ">
+        <div className="">
           <ScrollLink to="top" smooth={true} duration={500}>
             <img
               src="/tp_whitelogo.svg"
               alt="trustopay logo"
-              width={170}
-              height={170}
+              width={200}
+              height={200}
             />
           </ScrollLink>
         </div>
-        <div className="flex gap-8 w-[50%] ">
+        <div className="flex gap-8 ">
           {navbarItems.map((item) => (
             <ScrollLink
               key={item.id}
-              className={`w-fit paragraph font-medium text-lg  capitalize flex flex-col hover ${
-                item.id === 5 && "ml-auto"
-              }`}
+              className={` paragraph font-medium text-lg  capitalize flex flex-col hover `}
               to={item.href}
               smooth={true}
               duration={500}

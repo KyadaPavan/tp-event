@@ -27,7 +27,7 @@ export const Timeline = ({ data }) => {
       ref={containerRef}
     >
       <div className="px-4 mx-auto max-w-7xl md:px-8 lg:px-10">
-        <h2 className="text-3xl font-semibold text-center md:text-5xl">
+        <h2 className="text-3xl font-semibold text-center md:text-5xl text-[#0cffb7]">
           Event Schedule at a Glance
         </h2>
         <p className="mt-4 text-base text-center text-gray-300 md:text-lg">

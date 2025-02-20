@@ -77,16 +77,17 @@ const Circlezoom = () => {
           <div className="absolute flex flex-col items-center justify-center gap-20 text-white">
             <h1
               ref={text1}
-              className="lg:text-[170px] md:text-[100px] text-[50px] font-bold text-center leading-none"
+              className="lg:text-[130px] md:text-[100px] text-[50px] font-bold text-center leading-none"
             >
               <span className="text-stroke">FTX</span>{" "}
               <span className="text-[40px]">by</span> <br /> Trustopay
             </h1>
             <p
               ref={text2}
-              className="opacity-80 lg:w-48 md:w-64 sm:w-full text-[13px] sm:text-[10px] text-center px-2"
+              className="opacity-80 lg:w-80 md:w-72 sm:w-full md:text-[13px] text-[10px] text-center px-2"
             >
-              A showcase to the world's best aerial photography
+              An exclusive platform showcasing groundbreaking innovations and
+              visionary ideas from the startup ecosystem
             </p>
           </div>
         </div>

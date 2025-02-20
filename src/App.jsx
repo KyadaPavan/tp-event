@@ -1,6 +1,5 @@
 import "./App.css";
 import Circlezoom from "./components/Circlezoom";
-import Eyes from "./components/Eyes";
 import Navbar from "./components/Navbar";
 import { useEffect } from "react";
 import ZoomEffect from "./components/ZoomEffect";
@@ -9,6 +8,8 @@ import TabbedSection from "./components/TabbedSection";
 import StatsSection from "./components/StatsSection";
 import EventSchedule from "./components/EventSchedule";
 import MainGuest from "./components/MainGuest";
+import Speakers from "./components/Speaker";
+import Sponser from "./components/Sponser";
 function App() {
   useEffect(() => {
     (async () => {
@@ -18,34 +19,34 @@ function App() {
   }, []);
   return (
     <>
-      {/* <CircularScrollEffect />
-      <ZoomEffect /> */}
-
-      {/* <div className="max-w-[90%] mx-auto ">
-        <Navbar />
-      </div> */}
-
-      {/* <Navbar />
-      <Circlezoom /> */}
       <div>
         <Circlezoom />
       </div>
       <div>
         <ZoomEffect />
       </div>
-      <div className="py-10">
+      <div className="py-4 md:py-10">
         <VideoSection />
       </div>
-      <div className="py-10">
+      <div className="py-4 md:py-10">
         <TabbedSection />
       </div>
-      <div className="py-10">
+      <div className="py-4 md:py-10">
         <StatsSection />
       </div>
-      <div className="py-10">
+      <div className="hidden py-4 md:py-10 md:block ">
+        <MainGuest />
+      </div>
+      <div className="block py-4 md:py-10 md:hidden">
+        <Speakers />
+      </div>
+      <div className="py-4 md:py-10">
         <EventSchedule />
       </div>
-      <div className="py-10">
+      <div className="py-4 md:py-10">
+        <Sponser />
+      </div>
+      <div className="hidden py-4 md:py-10 md:block ">
         <MainGuest />
       </div>
     </>

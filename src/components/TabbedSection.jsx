@@ -86,7 +86,7 @@ const TabbedSection = () => {
 
                   {/* Text Content */}
                   <div className="text-center md:w-1/2 md:text-left sapce-y-16">
-                    <h2 className="mb-3 text-2xl font-semibold md:text-4xl">
+                    <h2 className="mb-3 text-[#0cffb7] text-2xl font-semibold md:text-4xl">
                       {tab.title}
                     </h2>
                     <p className="mb-4 text-sm text-gray-300/80 md:text-lg">

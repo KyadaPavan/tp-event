@@ -269,6 +269,12 @@ body {
     -webkit-text-stroke-width: 1px;
   }
 
+  .text-stroke-main {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #0cffb7;
+    -webkit-text-stroke-width: 1px;
+  }
+
   .perspective {
     perspective: 2200px;
   }

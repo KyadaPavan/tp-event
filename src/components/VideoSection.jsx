@@ -7,15 +7,15 @@ export default function VideoSection() {
 
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = "hidden"; // Disable scrolling
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflowY = "auto"; // Enable vertical scrolling only
-      document.body.style.overflowX = "hidden"; // Prevent horizontal scrolling
+      document.body.style.overflowY = "auto";
+      document.body.style.overflowX = "hidden";
     }
 
     return () => {
       document.body.style.overflowY = "auto";
-      document.body.style.overflowX = "hidden"; // Keep X hidden after unmount
+      document.body.style.overflowX = "hidden";
     };
   }, [isOpen]);
 
@@ -67,8 +67,8 @@ export default function VideoSection() {
 
       {/* Video Popup Modal */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-[#002324]">
-          <div className="relative w-full max-w-4xl p-4 md:p-6">
+        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-[#002324]">
+          <div className="relative w-full max-w-6xl p-4 md:p-6">
             <motion.button
               whileHover={{
                 scale: 1.1,

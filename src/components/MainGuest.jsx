@@ -6,49 +6,49 @@ const MainGuest = () => {
       id: 1,
       title: "Madhusudhan Rao",
       img: "/speaker-1.png",
-      postion: "CTO",
+      postion: "CTO at",
       company: "Swiggy",
     },
     {
       id: 2,
       title: "Krunal Shah",
       img: "/speaker-2.png",
-      postion: "Founder",
+      postion: "Founder of",
       company: "Cred",
     },
     {
       id: 3,
       title: "Anoop Menon",
       img: "/speaker-3.png",
-      postion: "CTO",
+      postion: "CTO at",
       company: "RedBus",
     },
     {
       id: 4,
       title: "Shakti Mohan",
       img: "/speaker-4.png",
-      postion: "Founder & CEO",
+      postion: "Founder & CEO of",
       company: "Lets Venture",
     },
     {
       id: 5,
       title: "Rahul Gupta",
       img: "/speaker-5.png",
-      postion: "Head Fintech",
+      postion: "Head Fintech at",
       company: "Zomato",
     },
     {
       id: 6,
       title: "Sandhya Devanathan",
       img: "/speaker-6.png",
-      postion: "Vice President, India",
+      postion: "Vice President, India at",
       company: "Meta",
     },
     {
       id: 7,
       title: "Lizzie Chapman",
       img: "/speaker-7.png",
-      postion: "Patner",
+      postion: "Patner of",
       company: "Berkeley Square Ginance Group",
     },
   ];
@@ -60,7 +60,7 @@ const MainGuest = () => {
     <>
       <div className="text-white max-w-[80%] mx-auto">
         <div>
-          <p className=" mx-auto text-4xl font-semibold text-center text-[#0cffb7]">
+          <p className=" mx-auto text-5xl font-semibold text-center text-[#0cffb7]">
             Experience & Expertise, Live on Stage
           </p>
         </div>
@@ -93,16 +93,12 @@ const MainGuest = () => {
                 <p className="text-3xl capitalize">{guest.title}</p>
 
                 {/* Only show details for the hovered guest */}
-                {hoveredIndex === index && (
-                  <div className="mt-2">
-                    <p className="text-base capitalize text-white/80">
-                      {guest.postion}
-                    </p>
-                    <p className="text-base capitalize text-white/80">
-                      {guest.company}
-                    </p>
-                  </div>
-                )}
+
+                <div className="mt-2">
+                  <p className="text-base capitalize text-white/80">
+                    {guest.postion} {guest.company}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
