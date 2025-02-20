@@ -17,7 +17,7 @@ const CallDareSection = () => {
         </div>
 
         {/* Right Side Content */}
-        <div className="flex items-center w-full px-6 py-10 bg-white md:w-1/2 md:px-16">
+        <div className="flex items-center w-full px-6 py-10 shadow-xl bg-white/30 backdrop-blur-md md:w-1/2 md:px-16">
           <div className="w-full space-y-6">
             {[
               {
@@ -49,9 +49,11 @@ const CallDareSection = () => {
                 desc: "Explore the latest in neo-banking and customer experience.",
               },
             ].map((item, index) => (
-              <div key={index} className="pb-4 border-b border-gray-300">
-                <h2 className="text-lg font-medium md:text-xl">{item.title}</h2>
-                <p className="text-sm text-gray-600 md:text-base">
+              <div key={index} className="pb-4 border-b border-[#47EAA4]">
+                <h2 className="text-lg font-medium text-white md:text-xl">
+                  {item.title}
+                </h2>
+                <p className="text-sm text-white/80 md:text-base">
                   {item.desc}
                 </p>
               </div>
