@@ -263,6 +263,28 @@ body {
     width: 100vh;
   }
 
+  /* 
+  .text-zoom {
+    -webkit-mask-image: url('/FTX-Mask.png');
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    height: 100vh;
+    width: 100vh;
+  } */
+
+  .text-zoom {
+    -webkit-mask-image: url("/FTX-Mask.png");
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    /* Ensures visibility before zoom */
+  }
+
+
+
   .text-stroke {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: white;
