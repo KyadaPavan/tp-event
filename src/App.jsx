@@ -11,6 +11,8 @@ import MainGuest from "./components/MainGuest";
 import Speakers from "./components/Speaker";
 import Sponser from "./components/Sponser";
 import TextZoomScroll from "./components/TextZoomScroll";
+import CallDareSection from "./components/CallDareSection";
+import TicketSection from "./components/TicketSection";
 function App() {
   useEffect(() => {
     (async () => {
@@ -35,7 +37,7 @@ function App() {
       <div className="py-4 md:py-10">
         <StatsSection />
       </div>
-      <div>
+      <div className="hidden py-4 md:py-10 md:block ">
         <TextZoomScroll />
       </div>
 
@@ -50,6 +52,12 @@ function App() {
       </div>
       <div className="py-4 md:py-10">
         <Sponser />
+      </div>
+      <div className="py-4 md:py-10">
+        <CallDareSection />
+      </div>
+      <div className="py-4 md:py-10">
+        <TicketSection />
       </div>
     </>
   );
