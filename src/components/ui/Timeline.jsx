@@ -23,7 +23,7 @@ export const Timeline = ({ data }) => {
 
   return (
     <div
-      className="w-full mx-auto font-sans text-white md:px-10 max-w-[80%]"
+      className=" mx-auto font-sans text-white md:px-10 md:max-w-[80%] w-[95%]"
       ref={containerRef}
     >
       <div className="px-4 mx-auto max-w-7xl md:px-8 lg:px-10">

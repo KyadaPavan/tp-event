@@ -84,7 +84,7 @@ const Circlezoom = () => {
             </h1>
             <p
               ref={text2}
-              className="opacity-80 lg:w-80 md:w-72 sm:w-full md:text-[13px] text-[10px] text-center px-2"
+              className="opacity-80 lg:w-80 md:w-72 w-[80%] md:text-[13px] text-[10px] text-center px-2"
             >
               An exclusive platform showcasing groundbreaking innovations and
               visionary ideas from the startup ecosystem

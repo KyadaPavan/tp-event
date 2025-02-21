@@ -49,7 +49,7 @@ const MainGuest = () => {
       title: "Lizzie Chapman",
       img: "/speaker-7.png",
       postion: "Patner of",
-      company: "Berkeley Square Ginance Group",
+      company: "Berkeley ",
     },
   ];
 

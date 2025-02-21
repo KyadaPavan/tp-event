@@ -64,7 +64,7 @@ const TicketSection = () => {
         <span className="px-4 py-1 text-sm font-semibold text-white rounded-full bg-white/30 backdrop-blur-md">
           14 - 16 SEPTEMBER 2025
         </span>
-        <h2 className="mt-8 text-4xl font-semibold text-white md:text-5xl">
+        <h2 className="mt-8 text-4xl font-semibold text-[#0cffb7] md:text-5xl">
           Get Your Tickets for FTX 2025
         </h2>
         <p className="mt-4 text-base text-gray-300 md:text-lg">
@@ -78,7 +78,7 @@ const TicketSection = () => {
         {plans.map((plan, index) => (
           <div
             key={index}
-            className="flex flex-col w-full max-w-sm p-6 text-white bg-[#002324] rounded-2xl md:w-1/4"
+            className="flex flex-col w-[90%]  p-6 text-white bg-[#002324] rounded-2xl md:w-1/4"
           >
             <h3 className={`text-xl font-semibold ${plan.color}`}>
               {plan.title}

@@ -17,8 +17,8 @@ const StatsSection = () => {
 
       {/* Subheading */}
       <div className="relative z-10 mb-12">
-        <p className="inline-block px-2 py-2 text-xs font-medium tracking-widest uppercase rounded-full cursor-pointer md:px-4 md:text-sm text-[#0cffb7] bg-white/30 backdrop-blur-md">
-          Bringing the Brightest Developers Together
+        <p className="inline-block px-2 py-2 text-xs font-medium tracking-widest uppercase rounded-full cursor-pointer md:px-4 md:text-sm text-[#0cffb7] bg-white/30 backdrop-blur-md ">
+          Bringing the Brightest Minds Together
         </p>
       </div>
 

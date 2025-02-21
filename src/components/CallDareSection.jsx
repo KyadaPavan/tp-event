@@ -4,10 +4,9 @@ const CallDareSection = () => {
   return (
     <section className="relative w-full h-full overflow-hidden">
       <div className="flex flex-col w-full h-full md:flex-row">
-        {/* Image Section */}
         <div
           className="w-full bg-center bg-cover md:w-1/2 md:h-auto"
-          style={{ backgroundImage: "url('/dare.png')" }} // Replace with actual image path
+          style={{ backgroundImage: "url('/dare.png')" }}
         >
           <div className="relative flex items-center h-full px-10 md:px-20">
             <h1 className="py-6 text-3xl font-semibold leading-tight text-white md:py-0 lg:text-6xl">
@@ -16,7 +15,6 @@ const CallDareSection = () => {
           </div>
         </div>
 
-        {/* Right Side Content */}
         <div className="flex items-center w-full px-6 py-10 shadow-xl bg-white/30 backdrop-blur-md md:w-1/2 md:px-16">
           <div className="w-full space-y-6">
             {[
@@ -59,6 +57,7 @@ const CallDareSection = () => {
               </div>
             ))}
           </div>
+          <div className="absolute bottom-0  w-[90%] mx-auto h-[90%] bg-gradient-to-r from-[#FC6524] to-[#47EAA4] opacity-50 blur-3xl my-auto rounded-full"></div>
         </div>
       </div>
     </section>

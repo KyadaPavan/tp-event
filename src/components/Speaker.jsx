@@ -48,7 +48,7 @@ const speakers = [
     title: "Lizzie Chapman",
     img: "/speaker-7.png",
     postion: "Patner",
-    company: "Berkeley Square Ginance Group",
+    company: "Berkeley ",
   },
 ];
 
@@ -60,7 +60,7 @@ const Speakers = () => {
       </p>
 
       {/* Scrollable container on mobile */}
-      <div className="flex space-x-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory scrollbar-hide">
+      <div className="flex space-x-4 overflow-x-auto md:overflow-visible snap-x snap-mandatory scrollbar-hide ">
         {speakers.map((speaker, index) => (
           <div
             key={index}
@@ -73,7 +73,7 @@ const Speakers = () => {
             />
             <h3 className="text-lg font-bold">{speaker.title}</h3>
             <p className="text-base text-gray-400">{speaker.postion}</p>
-            <p className="text-base font-bold italic text-[#0cffb7]">
+            <p className="text-base font-bold italic text-[#0cffb7] mb-10">
               {speaker.company}
             </p>
           </div>

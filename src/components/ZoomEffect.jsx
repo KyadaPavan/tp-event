@@ -1,15 +1,8 @@
 import React from "react";
-// import React, { useEffect, useRef } from "react";
-// import gsap from "gsap";
-// import ScrollTrigger from "gsap/ScrollTrigger";
 import { ArrowRight } from "lucide-react";
 import { Play } from "lucide-react";
-// gsap.registerPlugin(ScrollTrigger);
 
 const ZoomEffect = () => {
-  // const zoomOutRef = useRef(null);
-  // const zoomInRef = useRef(null);
-
   const items = [
     {
       title: "ATTEND",
@@ -37,40 +30,12 @@ const ZoomEffect = () => {
     },
   ];
 
-  // useEffect(() => {
-  //   const { innerHeight } = window;
-
-  //   const createScrollTrigger = (element, startScale, endScale) => {
-  //     gsap.fromTo(
-  //       element,
-  //       { scale: startScale }, // Start smaller for zoom-in, start bigger for zoom-out
-  //       {
-  //         scale: endScale, // Scale to original size
-  //         duration: 2,
-  //         scrollTrigger: {
-  //           trigger: element,
-  //           start: "center center", // Start animation when element reaches center
-  //           pin: true,
-  //           end: `+=${innerHeight * 1.2}`, // Less aggressive animation range
-  //           scrub: 2, // Smooth scroll effect
-  //           toggleActions: "play none none reverse",
-  //         },
-  //       }
-  //     );
-  //   };
-
-  //   createScrollTrigger(zoomOutRef.current, 5, 1); // Starts zoomed-in at 5x, shrinks to normal
-  //   createScrollTrigger(zoomInRef.current, 1, 4); // Starts small at 0.2x, grows to normal
-
-  //   return () => ScrollTrigger.killAll();
-  // }, []);
-
   return (
     <>
       <div className="h-full w-full bg-[#002324]  dark:bg-grid-white/[0.02] bg-grid-black/[0.05] relative flex items-center justify-center flex-col">
         <section className="relative flex flex-col items-center justify-between w-full min-h-screen gap-20 px-6 pt-10 text-white md:px-12">
           <div className="relative z-10 max-w-3xl text-center">
-            <div className="inline-block px-4 py-1.5 bg-gray-50/30 text-sm rounded-full font-medium shadow-2xl">
+            <div className="inline-block px-3 py-1.5 bg-gray-50/30 md:text-sm text-xs rounded-full font-medium shadow-2xl">
               GANDHINAGAR, GUJRAT, SEPTEMBER 14, 2025
             </div>
 
