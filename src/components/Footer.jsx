@@ -3,14 +3,12 @@ import {
   FaFacebookF,
   FaInstagram,
   FaYoutube,
-  FaMedium,
   FaLinkedinIn,
   FaWhatsapp,
 } from "react-icons/fa";
 import { ArrowRight } from "lucide-react";
-import { IoChatbubbleEllipsesOutline } from "react-icons/io5";
+
 import { FloatingDock } from "./ui/Floating-dock";
-import { FaHome } from "react-icons/fa";
 
 const Footer = () => {
   const items = [
@@ -74,38 +72,70 @@ const Footer = () => {
               <h3 className="mb-2 font-semibold">Previous Events</h3>
               <div className="h-0.5 w-[80%] bg-[#002324]"></div>
               <ul className="mt-4 space-y-2">
-                <li>Infobip's Shift Europe</li>
-                <li>Infobip's Shift America</li>
-                <li>Shift Dev</li>
-                <li>Shift Money</li>
-                <li>Shift AI</li>
-                <li>Shift Remote</li>
+                {[
+                  { name: "Infobip's Shift Europe", href: "/shift-europe" },
+                  { name: "Infobip's Shift America", href: "/shift-america" },
+                  { name: "Shift Dev", href: "/shift-dev" },
+                  { name: "Shift Money", href: "/shift-money" },
+                  { name: "Shift AI", href: "/shift-ai" },
+                  { name: "Shift Remote", href: "/shift-remote" },
+                ].map((item, index) => (
+                  <li key={index}>
+                    <a
+                      href={item.href}
+                      className="text-[#002324] transition-colors duration-300 hover:text-white"
+                    >
+                      {item.name}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
+
             {/* Column 2 */}
             <div>
               <h3 className="mb-2 font-semibold">More</h3>
               <div className="h-0.5 w-[80%] bg-[#002324]"></div>
               <ul className="mt-4 space-y-2">
-                <li>Become a Sponsor</li>
-                <li>Code of Conduct</li>
-                <li>Terms and Conditions</li>
-                <li>Privacy</li>
-                <li>Press & Media Kit</li>
-                <li>Photos</li>
-                <li>Videos</li>
-                <li>Infobip Acquisition</li>
-                <li>Infobip website</li>
+                {[
+                  { name: "Become a Sponsor", href: "/sponsor" },
+                  { name: "Code of Conduct", href: "/code-of-conduct" },
+                  { name: "Terms and Conditions", href: "/terms" },
+                  { name: "Privacy", href: "/privacy" },
+                  { name: "Press & Media Kit", href: "/press-media" },
+                  { name: "Photos", href: "/photos" },
+                  { name: "Videos", href: "/videos" },
+                  { name: "Infobip Acquisition", href: "/infobip-acquisition" },
+                  {
+                    name: "Infobip website",
+                    href: "https://www.infobip.com",
+                    external: true,
+                  },
+                ].map((item, index) => (
+                  <li key={index}>
+                    <a
+                      href={item.href}
+                      target={item.external ? "_blank" : "_self"}
+                      rel={item.external ? "noopener noreferrer" : ""}
+                      className="text-[#002324] transition-colors duration-300 hover:text-white"
+                    >
+                      {item.name}
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
+
             {/* Column 3 */}
             <div>
               <h3 className="mb-2 font-semibold">Contact</h3>
-              <div className="h-0.5 w-[80%] bg-[#002324]"></div>
+              <div className="h-0.5 w-[80%] bg-[#002324] "></div>
               <p className="mt-4">Infobip d.o.o.</p>
               <p>Domovinskog rata 61,</p>
               <p>21000 Split, Croatia</p>
-              <p className="mt-2">shift@infobip.com</p>
+              <p className="mt-2 transition-colors duration-300 cursor-pointer hover:text-white">
+                shift@infobip.com
+              </p>
             </div>
           </div>
         </div>
