@@ -124,8 +124,8 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="flex items-center justify-between pt-4 mt-10 text-center border-t border-black md:flex-row">
-          <p>© Trustopay 2025</p>
-          <div className="flex mt-4 space-x-4 md:mt-0">
+          <p className="flex mt-4 space-x-4 md:mt-12">© Trustopay 2025</p>
+          <div className="flex mt-4 space-x-4 md:mt-12">
             <FloatingDock items={items} />
           </div>
         </div>
