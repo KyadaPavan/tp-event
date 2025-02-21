@@ -17,6 +17,8 @@ import EventLocation from "./components/EventLocation";
 import SponsorsSection from "./components/SponsorsSection";
 import FAQSection from "./components/FAQSection";
 import CTA from "./components/CTA";
+import Footer from "./components/Footer";
+import { BrowserRouter as Router } from "react-router-dom";
 function App() {
   useEffect(() => {
     (async () => {
@@ -26,55 +28,60 @@ function App() {
   }, []);
   return (
     <>
-      <div>
-        <Circlezoom />
-      </div>
-      <div>
-        <ZoomEffect />
-      </div>
-      <div className="py-4 md:py-10">
-        <VideoSection />
-      </div>
-      <div className="py-4 md:py-10">
-        <TabbedSection />
-      </div>
-      <div className="py-4 md:py-10">
-        <StatsSection />
-      </div>
-      <div className="hidden py-4 md:py-10 md:block ">
-        <TextZoomScroll />
-      </div>
+      <Router>
+        <div>
+          <Circlezoom />
+        </div>
+        <div>
+          <ZoomEffect />
+        </div>
+        <div className="py-4 md:py-10">
+          <VideoSection />
+        </div>
+        <div className="py-4 md:py-10">
+          <TabbedSection />
+        </div>
+        <div className="py-4 md:py-10">
+          <StatsSection />
+        </div>
+        <div className="hidden py-4 md:py-10 md:block ">
+          <TextZoomScroll />
+        </div>
 
-      <div className="hidden py-4 md:py-10 md:block ">
-        <MainGuest />
-      </div>
-      <div className="block py-10 md:py-10 md:hidden">
-        <Speakers />
-      </div>
-      <div className="py-4 md:py-10">
-        <EventSchedule />
-      </div>
-      <div className="py-4 md:py-10">
-        <Sponser />
-      </div>
-      <div className="py-4 md:py-10">
-        <CallDareSection />
-      </div>
-      <div className="py-4 md:py-10">
-        <TicketSection />
-      </div>
-      <div className="py-4 md:py-10">
-        <EventLocation />
-      </div>
-      <div className="py-4 md:py-10">
-        <SponsorsSection />
-      </div>
-      <div className="py-4 md:py-10">
-        <FAQSection />
-      </div>
-      <div className="py-4 md:py-10">
-        <CTA />
-      </div>
+        <div className="hidden py-4 md:py-10 md:block ">
+          <MainGuest />
+        </div>
+        <div className="block py-10 md:py-10 md:hidden">
+          <Speakers />
+        </div>
+        <div className="py-4 md:py-10">
+          <EventSchedule />
+        </div>
+        <div className="py-4 md:py-10">
+          <Sponser />
+        </div>
+        <div className="py-4 md:py-10">
+          <CallDareSection />
+        </div>
+        <div className="py-4 md:py-10">
+          <TicketSection />
+        </div>
+        <div className="py-4 md:py-10">
+          <EventLocation />
+        </div>
+        <div className="py-4 md:py-10">
+          <SponsorsSection />
+        </div>
+        <div className="py-4 md:py-10">
+          <FAQSection />
+        </div>
+        <div className="py-4 md:py-10">
+          <CTA />
+        </div>
+        <div className="pt-4 md:pt-10">
+          <Footer />
+        </div>
+      </Router>
     </>
   );
 }
