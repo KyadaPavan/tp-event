@@ -78,8 +78,19 @@ function App() {
         <div className="py-4 md:py-10">
           <CTA />
         </div>
-        <div className="pt-4 md:pt-10">
+        <div className="block pt-4 md:pt-10 md:hidden">
           <Footer />
+        </div>
+
+        <div
+          className="relative h-[840px] hidden md:block"
+          style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
+        >
+          <div className="relative h-[calc(100vh+800px)] -top-[100vh]">
+            <div className="h-[800px] sticky top-[calc(100vh-800px)]">
+              <Footer />
+            </div>
+          </div>
         </div>
       </Router>
     </>
