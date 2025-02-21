@@ -80,7 +80,8 @@ const Circlezoom = () => {
               className="lg:text-[130px] md:text-[100px] text-[50px] font-bold text-center leading-none"
             >
               <span className="text-stroke">FTX</span>{" "}
-              <span className="text-[40px]">by</span> <br /> Trustopay
+              <span className="md:text-[40px] text-[30px]">by</span> <br />{" "}
+              Trustopay
             </h1>
             <p
               ref={text2}
