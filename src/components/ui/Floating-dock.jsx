@@ -29,7 +29,7 @@ const FloatingDockMobile = ({ items, className }) => {
         {open && (
           <motion.div
             layoutId="nav"
-            className="absolute right-0 flex flex-col gap-2 mb-2 text-orange-500 bottom-full "
+            className="absolute right-0 flex flex-col gap-2 mb-2 text-white scrollbar-hide bottom-full "
           >
             {items.map((item, idx) => (
               <motion.div
@@ -51,7 +51,7 @@ const FloatingDockMobile = ({ items, className }) => {
                 <Link
                   to={item.href}
                   key={item.title}
-                  className="flex items-center justify-center w-10 h-10 bg-[#002324] rounded-full "
+                  className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-[#FC6524] to-[#47EAA4]"
                 >
                   <div className="w-4 h-4">{item.icon}</div>
                 </Link>
@@ -62,7 +62,7 @@ const FloatingDockMobile = ({ items, className }) => {
       </AnimatePresence>
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center justify-evenly w-28 h-10 rounded-full bg-[#002324] text-[#FC6423] "
+        className="flex items-center h-10 text-white rounded-full justify-evenly w-28 bg-gradient-to-r from-[#FC6524] to-[#47EAA4] "
       >
         Socials <ArrowUp />
       </button>
@@ -77,7 +77,7 @@ const FloatingDockDesktop = ({ items, className }) => {
       onMouseMove={(e) => mouseX.set(e.pageX)}
       onMouseLeave={() => mouseX.set(Infinity)}
       className={cn(
-        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-white/10 backdrop-blur-md px-4 pb-3",
+        "mx-auto hidden md:flex h-16 gap-4 items-end  rounded-2xl bg-white/10 backdrop-blur-md px-4 pb-3 scrollbar-hide",
         className
       )}
     >

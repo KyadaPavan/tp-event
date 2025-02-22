@@ -33,7 +33,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className="App z-[200]">
+        <div className="hidden App md:block">
           <AnimatedCursor
             innerSize={8}
             outerSize={35}
@@ -108,7 +108,7 @@ function App() {
           <TextZoomScroll />
         </div>
 
-        <div className="py-4 md:py-10">
+        <div className="py-4 md:py-10 scrollbar-hide">
           <ExpandableCardDemo />
         </div>
         <div className="hidden py-4 md:py-10 md:block ">
