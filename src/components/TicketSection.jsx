@@ -80,10 +80,10 @@ const TicketSection = () => {
             key={index}
             className="flex flex-col w-[90%]  p-6 text-white bg-[#002324] rounded-2xl md:w-1/4"
           >
-            <h3 className={`text-xl font-semibold ${plan.color}`}>
+            <h3 className={`text-xl text-center font-semibold ${plan.color}`}>
               {plan.title}
             </h3>
-            <p className="mt-2 text-3xl font-bold">
+            <p className="mt-2 text-3xl font-bold text-center">
               {plan.price} <span className="text-lg"></span>
             </p>
             <div className="my-4 border-b border-gray-600"></div>
@@ -119,108 +119,3 @@ const TicketSection = () => {
 };
 
 export default TicketSection;
-
-// import React from "react";
-// import { CheckCircle, XCircle } from "lucide-react";
-
-// const plans = [
-//   {
-//     title: "Early Bird Standard Pass",
-//     price: "199€",
-//     color: "text-green-400",
-//     available: [
-//       "2-Day Conference Pass",
-//       "Access to Multiple Stages",
-//       "Access to Exhibition Area",
-//       "Lunch & Refreshments Included",
-//       "Access Evening Social Events",
-//     ],
-//     unavailable: [
-//       "Access to Educational Masterclasses (Workshops)",
-//       "2-Day Virtual Conference Pass",
-//       "Access to All Streaming Sessions",
-//       "Access to Virtual Networking",
-//       "On-Demand Access to All Recorded Sessions",
-//     ],
-//   },
-//   {
-//     title: "Early Bird All Access Pass",
-//     price: "329€",
-//     color: "text-orange-400",
-//     available: [
-//       "2-Day Conference Pass",
-//       "Access to Multiple Stages",
-//       "Access to Exhibition Area",
-//       "Lunch & Refreshments Included",
-//       "Access Evening Social Events",
-//       "Access to Educational Masterclasses (Workshops)",
-//       "2-Day Virtual Conference Pass",
-//       "Access to All Streaming Sessions",
-//       "Access to Virtual Networking",
-//       "On-Demand Access to All Recorded Sessions",
-//     ],
-//     unavailable: [],
-//   },
-//   {
-//     title: "Virtual Pass",
-//     price: "Free",
-//     color: "text-gray-300",
-//     available: ["2-Day Virtual Conference Pass"],
-//     unavailable: [
-//       "2-Day Conference Pass",
-//       "Access to Multiple Stages",
-//       "Access to Exhibition Area",
-//       "Lunch & Refreshments Included",
-//       "Access Evening Social Events",
-//       "Access to Educational Masterclasses (Workshops)",
-//       "Access to All Streaming Sessions",
-//       "Access to Virtual Networking",
-//       "On-Demand Access to All Recorded Sessions",
-//     ],
-//   },
-// ];
-
-// const PricingPlans = () => {
-//   return (
-//     <section className="flex flex-col items-center w-full px-4 py-16 ">
-//       <div className="flex flex-wrap justify-center w-full max-w-6xl gap-6">
-//         {plans.map((plan, index) => (
-//           <div
-//             key={index}
-//             className="flex flex-col w-full max-w-sm p-6 text-white bg-[#002324] rounded-2xl md:w-1/3"
-//           >
-//             <h3 className={`text-xl font-semibold ${plan.color}`}>
-//               {plan.title}
-//             </h3>
-//             <p className="mt-2 text-3xl font-bold">
-//               {plan.price} <span className="text-lg">+ VAT</span>
-//             </p>
-//             <div className="my-4 border-b border-gray-600"></div>
-//             <ul className="space-y-3 text-sm">
-//               {plan.available.map((item, i) => (
-//                 <li key={i} className="flex items-center space-x-2">
-//                   <CheckCircle className="text-green-400" size={18} />
-//                   <span>{item}</span>
-//                 </li>
-//               ))}
-//               {plan.unavailable.map((item, i) => (
-//                 <li
-//                   key={i}
-//                   className="flex items-center space-x-2 line-through opacity-50"
-//                 >
-//                   <XCircle className="text-red-400" size={18} />
-//                   <span>{item}</span>
-//                 </li>
-//               ))}
-//             </ul>
-//             <button className="mt-6 w-full px-4 py-2 text-lg font-semibold text-white rounded-lg bg-gradient-to-r from-[#FC6524] to-[#47EAA4] hover:opacity-90">
-//               Get Ticket
-//             </button>
-//           </div>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default PricingPlans;

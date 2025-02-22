@@ -57,7 +57,7 @@ const CallDareSection = () => {
               </div>
             ))}
           </div>
-          <div className="absolute bottom-0  w-[90%] mx-auto h-[90%] bg-gradient-to-r from-[#FC6524] to-[#47EAA4] opacity-50 blur-3xl my-auto rounded-full"></div>
+          <div className="absolute -top-40  -right-10 w-[60%] mx-auto h-[70%] bg-gradient-to-r from-[#FC6524] to-[#47EAA4] opacity-50 blur-3xl my-auto rounded-full"></div>
         </div>
       </div>
     </section>

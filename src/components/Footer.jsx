@@ -45,14 +45,15 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-[#FC6423] text-[#002324] px-6 md:px-12 md:py-24 py-12 mt-10">
-      <div className="mx-auto md:max-w-[80%] max-w-[90%]">
+    <footer className="relative px-6 py-12 mt-10 text-white bg-white/20 backdrop-blur-md md:px-12 md:py-24">
+      <div className="absolute  w-[90%] mx-auto h-[90%] bg-gradient-to-r from-[#FC6524] to-[#47EAA4] opacity-50 blur-3xl my-auto rounded-full z-[-4]"></div>
+      <div className="mx-auto md:max-w-[80%] max-w-[90%] ">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
           {/* Left Section */}
           <div className="flex flex-col items-start justify-start gap-4">
             <div className="flex items-center space-x-2 ">
               <img
-                src="/tp-greenlogo.svg"
+                src="/tp_whitelogo.svg"
                 alt="tp-logo-white"
                 className="w-60 "
               />
@@ -68,9 +69,9 @@ const Footer = () => {
           {/* Right Section */}
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
             {/* Column 1 */}
-            <div>
-              <h3 className="mb-2 font-semibold">Previous Events</h3>
-              <div className="h-0.5 w-[80%] bg-[#002324]"></div>
+            <div className="text-center md:text-left">
+              <h3 className="mb-2 text-lg font-semibold">Previous Events</h3>
+              <div className="h-0.5 md:w-[80%] w-full bg-white"></div>
               <ul className="mt-4 space-y-2">
                 {[
                   { name: "Infobip's Shift Europe", href: "/shift-europe" },
@@ -83,7 +84,7 @@ const Footer = () => {
                   <li key={index}>
                     <a
                       href={item.href}
-                      className="text-[#002324] transition-colors duration-300 hover:text-white"
+                      className="text-white transition-colors duration-300  hover:text-[#47EAA4]"
                     >
                       {item.name}
                     </a>
@@ -94,9 +95,11 @@ const Footer = () => {
 
             {/* Column 2 */}
             <div>
-              <h3 className="mb-2 font-semibold">More</h3>
-              <div className="h-0.5 w-[80%] bg-[#002324]"></div>
-              <ul className="mt-4 space-y-2">
+              <h3 className="mb-2 text-lg font-semibold text-center md:text-left">
+                More
+              </h3>
+              <div className="h-0.5 md:w-[80%] w-full bg-white "></div>
+              <ul className="mt-4 space-y-2 text-center md:text-left">
                 {[
                   { name: "Become a Sponsor", href: "/sponsor" },
                   { name: "Code of Conduct", href: "/code-of-conduct" },
@@ -117,7 +120,7 @@ const Footer = () => {
                       href={item.href}
                       target={item.external ? "_blank" : "_self"}
                       rel={item.external ? "noopener noreferrer" : ""}
-                      className="text-[#002324] transition-colors duration-300 hover:text-white"
+                      className="text-white transition-colors duration-300 hover:text-[#47EAA4]"
                     >
                       {item.name}
                     </a>
@@ -127,9 +130,9 @@ const Footer = () => {
             </div>
 
             {/* Column 3 */}
-            <div>
-              <h3 className="mb-2 font-semibold">Contact</h3>
-              <div className="h-0.5 w-[80%] bg-[#002324] "></div>
+            <div className="text-center md:text-left">
+              <h3 className="mb-2 text-lg font-semibold">Contact</h3>
+              <div className="h-0.5 md:w-[80%] w-full bg-white "></div>
               <p className="mt-4">Infobip d.o.o.</p>
               <p>Domovinskog rata 61,</p>
               <p>21000 Split, Croatia</p>
@@ -142,18 +145,22 @@ const Footer = () => {
 
         {/* Center Section */}
         <div className="flex flex-col items-center justify-between gap-6 mt-10 text-center md:flex-row md:gap-0">
-          <h3 className="text-lg font-semibold text-[#002324]">
+          <h3 className="text-lg font-semibold text-white">
             Bringing the Brightest Developers Together
           </h3>
 
-          <button className="px-6 py-3 text-base font-medium rounded-lg text-[#FC6423] bg-[#002324] flex items-center gap-2  transition-all duration-300 ease-in-out  hover:shadow-lg hover:gap-3">
+          {/* <button className="px-6 py-3 text-base font-medium rounded-lg text-[#FC6423] bg-[#002324] flex items-center gap-2  transition-all duration-300 ease-in-out  hover:shadow-lg hover:gap-3">
+            Get Tickets
+            <ArrowRight size={20} />
+          </button> */}
+          <button className="px-6 py-3 text-base font-medium rounded-lg bg-gradient-to-r from-[#FC6524] to-[#47EAA4] shadow-lg flex items-center gap-2 text-black transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#47EAA4] hover:to-[#FC6524] hover:gap-3">
             Get Tickets
             <ArrowRight size={20} />
           </button>
         </div>
 
         {/* Bottom Section */}
-        <div className="flex items-center justify-between pt-4 mt-10 text-center border-t border-black md:flex-row">
+        <div className="flex items-center justify-between pt-4 mt-10 text-center border-t border-white md:flex-row">
           <p className="flex mt-4 space-x-4 md:mt-12">© Trustopay 2025</p>
           <div className="flex mt-4 space-x-4 md:mt-12">
             <FloatingDock items={items} />
