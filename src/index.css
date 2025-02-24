@@ -264,7 +264,7 @@ body {
   }
 
   .image-mobile {
-    -webkit-mask-image: url('/circle-mask-mobile.png');
+    -webkit-mask-image: url('/circle-mask-mobile2.png');
     -webkit-mask-position: center;
     -webkit-mask-repeat: no-repeat;
     height: 100vh;
