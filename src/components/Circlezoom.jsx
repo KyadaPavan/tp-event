@@ -69,7 +69,7 @@ const Circlezoom = () => {
           /> */}
 
           <div
-            className="bg-gradient-to-r from-[#FC6524] to-[#47EAA4] md:w-[60%] w-[70%]  md:image image-mobile"
+            className="bg-gradient-to-r from-[#FC6524] to-[#47EAA4] md:w-[60%] w-[70%]  image "
             ref={img}
           ></div>
 
