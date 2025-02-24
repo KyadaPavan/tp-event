@@ -32,7 +32,7 @@ const StickyScroll = ({ content = [] }) => {
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row md:h-[200vh] h-[260vh]">
+      <div className="flex flex-col lg:flex-row h-[200vh] ">
         {/* Left Side - Scrolling Text Content */}
         <div className="relative flex flex-col justify-center space-y-24 lg:w-1/2">
           {content.map((item, index) => (
