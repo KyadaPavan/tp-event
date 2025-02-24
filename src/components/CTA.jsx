@@ -1,5 +1,5 @@
 import React from "react";
-import FAQS, { Boxes, BoxesCore } from "./ui/Background-boxes";
+import FAQS, { Boxes } from "./ui/Background-boxes";
 
 const CTA = () => {
   return (
