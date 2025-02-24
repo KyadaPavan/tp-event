@@ -26,7 +26,7 @@ const StickyScroll = ({ content = [] }) => {
 
   return (
     <div className="relative max-w-6xl mx-auto" ref={containerRef}>
-      <div className="sticky top-20">
+      <div className="sticky top-16">
         <p className="mx-auto md:text-5xl  text-3xl font-semibold text-center text-[#0cffb7] bg-white/10  md:backdrop-blur-md backdrop-blur-lg md:w-fit w-[90%] md:px-4 px-0  py-4 rounded-2xl">
           Why This Event Matters for You
         </p>
@@ -39,7 +39,7 @@ const StickyScroll = ({ content = [] }) => {
             <div
               key={item.id}
               ref={(el) => (sectionRefs.current[index] = el)}
-              className="px-6 text-section md:mt-0 mt-10"
+              className="px-6 text-section "
             >
               <motion.h2
                 className="text-3xl font-bold text-[#0cffb7]"
@@ -58,7 +58,7 @@ const StickyScroll = ({ content = [] }) => {
         </div>
 
         {/* Right Side - Sticky Image Container */}
-        <div className="sticky top-0 flex items-center justify-center h-screen lg:w-1/2 z-[-4] md:block hidden ">
+        <div className="sticky top-0 items-center justify-center h-screen z-[-4] md:flex hidden">
           <motion.img
             key={content[activeCard]?.id}
             src={content[activeCard]?.image}
