@@ -90,10 +90,10 @@ export default function FAQS() {
         <div className="mt-6 flex items-center justify-center gap-2 flex-wrap">
           <p className="text-lg font-medium">Send your Questions at</p>
           <a
-            href="mailto:event-support@example.com"
+            href="mailto:ftx@trustopay.com"
             className="text-[#0cffb7] text-xl font-medium hover:underline"
           >
-            event-support@example.com
+            ftx@trustopay.com
           </a>
         </div>
         <p className="mt-6 text-gray-300">
