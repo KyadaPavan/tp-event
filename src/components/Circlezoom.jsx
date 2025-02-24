@@ -69,7 +69,7 @@ const Circlezoom = () => {
           /> */}
 
           <div
-            className="bg-gradient-to-r from-[#FC6524] to-[#47EAA4] md:w-[60%] w-[70%]  md:image image-mobile"
+            className="bg-gradient-to-r from-[#FC6524] to-[#47EAA4] md:w-[60%] w-[100%]  md:image image-mobile"
             ref={img}
           ></div>
 
@@ -80,7 +80,7 @@ const Circlezoom = () => {
               className="lg:text-[130px] md:text-[100px] text-[50px] font-bold text-center leading-none"
             >
               <span className="text-stroke">FTX</span>{" "}
-              <span className="md:text-[40px] text-[30px]">by</span> <br />{" "}
+              <span className="md:text-[40px] text-[20px]">by</span> <br />{" "}
               Trustopay
             </h1>
             <p
