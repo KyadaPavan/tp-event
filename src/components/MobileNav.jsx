@@ -85,7 +85,7 @@ export default function MobileNav() {
                   smooth={true}
                   duration={500}
                   onClick={() => setToggle(false)}
-                  className="text-[40px] leading-[67px] font-FoundersGrotesk uppercase font-semibold tracking-[-.9] text-background"
+                  className="text-[40px] leading-[67px]  uppercase font-semibold tracking-[-.9] text-background"
                 >
                   {item.title}
                 </ScrollLink>
