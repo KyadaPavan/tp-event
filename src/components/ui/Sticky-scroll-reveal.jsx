@@ -27,12 +27,12 @@ const StickyScroll = ({ content = [] }) => {
   return (
     <div className="relative max-w-6xl mx-auto" ref={containerRef}>
       <div className="sticky top-16">
-        <p className="mx-auto md:text-5xl  text-3xl font-semibold text-center text-[#0cffb7] bg-white/10  md:backdrop-blur-md backdrop-blur-lg md:w-fit w-[90%] md:px-4 px-0  py-4 rounded-2xl">
+        <p className="mx-auto md:text-5xl  text-3xl font-semibold text-center text-[#0cffb7] bg-white/20  md:backdrop-blur-md backdrop-blur-lg md:w-fit w-[90%] md:px-4 px-0  py-4 rounded-2xl">
           Why This Event Matters for You
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row h-[200vh] ">
+      <div className="flex flex-col lg:flex-row md:h-[200vh] h-[250vh] ">
         {/* Left Side - Scrolling Text Content */}
         <div className="relative flex flex-col justify-center space-y-24 lg:w-1/2">
           {content.map((item, index) => (
