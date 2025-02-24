@@ -263,6 +263,14 @@ body {
     width: 100vh;
   }
 
+  .image-mobile {
+    -webkit-mask-image: url('/circle-mask-mobile.png');
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    height: 100vh;
+    width: 100vh;
+  }
+
   /* 
   .text-zoom {
     -webkit-mask-image: url('/FTX-Mask.png');
