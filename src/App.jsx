@@ -140,7 +140,7 @@ function App() {
         <div className="py-4 md:py-10">
           <FAQSection />
         </div>
-        <div className="py-4 md:py-10">
+        <div className="py-4 md:py-10 max-w-screen ">
           <CTA />
         </div>
         <div className="block pt-4 md:pt-10 md:hidden">

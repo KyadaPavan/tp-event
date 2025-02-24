@@ -77,8 +77,8 @@ export const Boxes = React.memo(BoxesCore);
 
 export default function FAQS() {
   return (
-    <section className="relative flex flex-col items-center justify-center max-w-screen ">
-      <div className="text-center  px-6  text-white rounded-lg shadow-lg max-w-3xl mt-0 md:mt-10 mx-auto ">
+    <section className="relative flex flex-col items-center justify-center  ">
+      <div className="text-center  px-6  text-white rounded-lg shadow-lg max-w-3xl     mt-0 md:mt-10 mx-auto ">
         <h2 className="text-3xl md:text-4xl font-semibold text-[#0cffb7]">
           Questions? We’ve Got You Covered!
         </h2>
