@@ -39,7 +39,7 @@ export default function MobileNav() {
       <div
         className={`${
           isScrollingDown ? "-top-20" : "top-0"
-        } w-full  justify-between items-center h-[8vh] padding-x flex lg:hidden max-w-[90%] mx-auto`}
+        } w-full  justify-between items-center h-[8vh] padding-x flex lg:hidden max-w-[90%] mx-auto py-8`}
       >
         <ScrollLink to="home" smooth={true} duration={500}>
           <img
