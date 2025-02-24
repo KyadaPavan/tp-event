@@ -98,19 +98,19 @@ function App() {
           />
         </div>
 
-        <div className="py-4 md:py-10">
+        {/* <div className="py-4 md:py-10">
           <TabbedSection />
-        </div>
-        <div className="py-4 md:py-10">
+        </div> */}
+        {/* <div className="py-4 md:py-10">
           <StatsSection />
-        </div>
+        </div> */}
         <div className="hidden py-4 md:py-10 md:block ">
           <TextZoomScroll />
         </div>
 
-        <div className="py-4 md:py-10 scrollbar-hide">
+        {/* <div className="py-4 md:py-10 scrollbar-hide max-w-screen">
           <ExpandableCardDemo />
-        </div>
+        </div> */}
         <div className="hidden py-4 md:py-10 md:block ">
           <MainGuest />
         </div>
@@ -127,7 +127,7 @@ function App() {
         <div className="py-4 md:py-10">
           <TicketSection />
         </div>
-        <div className="py-4 md:py-10">
+        <div className="py-4 md:py-10 ">
           <EventLocation />
         </div>
         <div className="py-4 md:py-10">

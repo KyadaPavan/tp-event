@@ -29,18 +29,8 @@ export function ExpandableCardDemo() {
   return (
     <>
       <AnimatePresence>
-        {active && typeof active === "object" && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-10 w-full h-full bg-black/20"
-          />
-        )}
-      </AnimatePresence>
-      <AnimatePresence>
         {active && typeof active === "object" ? (
-          <div className="fixed inset-0  grid place-items-center z-[100]">
+          <div className="fixed inset-0  grid place-items-center max-w-screen">
             <motion.button
               key={`button-${active.title}-${id}`}
               layout
@@ -64,7 +54,7 @@ export function ExpandableCardDemo() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white/20 backdrop-blur-md  sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <img
@@ -88,7 +78,7 @@ export function ExpandableCardDemo() {
                     </motion.h3>
                     <motion.p
                       layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-600 dark:text-neutral-400"
+                      className="text-white/70"
                     >
                       {active.description}
                     </motion.p>
@@ -100,7 +90,7 @@ export function ExpandableCardDemo() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="text-neutral-600 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                    className="text-white/70 text-xs md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto  [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                   >
                     {typeof active.content === "function"
                       ? active.content()
@@ -113,7 +103,7 @@ export function ExpandableCardDemo() {
         ) : null}
       </AnimatePresence>
       <div>
-        <p className="my-20 mx-auto text-5xl font-semibold text-center text-[#0cffb7]">
+        <p className="my-20 mx-auto text-5xl font-semibold text-center text-[#0cffb7] ">
           Experience & Expertise, Live on Stage
         </p>
       </div>
@@ -123,7 +113,7 @@ export function ExpandableCardDemo() {
             layoutId={`card-${card.title}-${id}`}
             key={`card-${card.title}-${id}`}
             onClick={() => setActive(card)}
-            className="flex flex-col items-center justify-between p-4 cursor-pointer md:flex-row hover:bg-white/20 hover:backdrop-blur-md rounded-xl"
+            className="flex flex-col items-center justify-between p-4 cursor-pointer md:flex-row hover:bg-white/20 hover:backdrop-blur-md rounded-xl max-w-screen"
           >
             <div className="flex flex-col gap-4 md:flex-row ">
               <motion.div layoutId={`image-${card.title}-${id}`}>
@@ -144,7 +134,7 @@ export function ExpandableCardDemo() {
                 </motion.h3>
                 <motion.p
                   layoutId={`description-${card.description}-${id}`}
-                  className="text-center text-neutral-600 dark:text-neutral-400 md:text-left"
+                  className="text-center text-white/70 md:text-left"
                 >
                   {card.description}
                 </motion.p>

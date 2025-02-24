@@ -64,7 +64,7 @@ const FloatingDockMobile = ({ items, className }) => {
         onClick={() => setOpen(!open)}
         className="flex items-center h-10 text-white rounded-full justify-evenly w-28 bg-gradient-to-r from-[#FC6524] to-[#47EAA4] "
       >
-        Socials <ArrowUp />
+        Socials <ArrowUp size={20} />
       </button>
     </div>
   );

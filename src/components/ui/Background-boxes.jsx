@@ -27,7 +27,7 @@ export const BoxesCore = ({ className, ...rest }) => {
         transform: `translate(-40%,-20%) skewX(-30deg) skewY(0deg) scale(0.675) rotate(0deg) translateZ(0)`,
       }}
       className={cn(
-        "p-4 flex md:w-fit md:h-fit w-[80] h-[80] mx-auto",
+        "p-4 flex md:w-fit  md:h-fit w-[80] h-[80] mx-auto ",
         className
       )}
       {...rest}
@@ -77,7 +77,7 @@ export const Boxes = React.memo(BoxesCore);
 
 export default function FAQS() {
   return (
-    <section className="relative flex flex-col items-center justify-center">
+    <section className="relative flex flex-col items-center justify-center max-w-screen">
       {/* Fixed Content (Top) */}
       <div className="text-center  px-6  text-white rounded-lg shadow-lg max-w-3xl mt-0 md:mt-10 mx-auto">
         <h2 className="text-3xl md:text-4xl font-semibold text-[#0cffb7]">
