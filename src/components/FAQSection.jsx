@@ -72,32 +72,32 @@ export default function FAQSection() {
           >
             {/* Question */}
             <button
-              className={`w-full text-left p-4 flex items-center justify-between text-base md:text-lg font-medium 
-              `}
+              className="w-full text-left p-4 flex items-center justify-between text-base md:text-lg font-medium"
               onClick={() => toggleFAQ(index)}
             >
-              {faq.question}
-              {openIndex === index ? (
-                <FaChevronUp className="text-gray-400" />
-              ) : (
-                <FaChevronDown className="text-gray-400" />
-              )}
+              <span className="flex-1">{faq.question}</span>
+              <span className="w-6 flex items-center justify-center">
+                {openIndex === index ? (
+                  <FaChevronUp className="text-gray-400" size={15} />
+                ) : (
+                  <FaChevronDown className="text-gray-400" size={15} />
+                )}
+              </span>
             </button>
 
-            {/* Answer with smooth reveal */}
+            {/* Answer */}
             <div
-              className={`overflow-hidden transition-all duration-300  ${
+              className={`overflow-hidden transition-all duration-300 ${
                 openIndex === index
                   ? "max-h-40 opacity-100 p-4"
                   : "max-h-0 opacity-0 p-0"
               }`}
             >
-              <p className="text-gray-100 md:text-base text-sm ">
-                {faq.answer}
-              </p>
+              <p className="text-gray-100 md:text-base text-sm">{faq.answer}</p>
             </div>
           </div>
         ))}
+
         <div className="absolute top-0  w-[90%] h-[100%] bg-gradient-to-r from-[#047059] to-[#47EAA4] opacity-50 blur-3xl rounded-full z-[-20]"></div>
       </div>
     </div>

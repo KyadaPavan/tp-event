@@ -10,7 +10,7 @@ const CTA = () => {
           <FAQS />
         </div>
 
-        <div className="md:w-fit md:h-fit w-[80] h-fit overflow-x-hidden md:hidden block">
+        <div className="md:w-fit md:h-fit w-[80] h-fit  md:hidden block">
           <Boxes />
           <FAQS />
         </div>

@@ -1,20 +1,20 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { cn } from "../libs/utils";
-
+import { ArrowRight } from "lucide-react";
 export const BoxesCore = ({ className, ...rest }) => {
   const rows = new Array(60).fill(1);
   const cols = new Array(15).fill(1);
   let colors = [
-    "--teal-300", // Related to #0cffb7
-    "--teal-500", // Related to #047059
-    "--orange-400", // Related to #FC6524
-    "--orange-600", // A deeper shade of #FC6524
-    "--green-300", // Related to #47EAA4
-    "--green-500", // A deeper shade of #47EAA4
-    "--emerald-400", // Another shade close to #47EAA4
-    "--cyan-400", // Close to #0cffb7
-    "--lime-400", // A lighter green complementing #47EAA4
+    "--teal-300",
+    "--teal-500",
+    "--orange-400",
+    "--orange-600",
+    "--green-300",
+    "--green-500",
+    "--emerald-400",
+    "--cyan-400",
+    "--lime-400",
   ];
 
   const getRandomColor = () => {
@@ -27,7 +27,7 @@ export const BoxesCore = ({ className, ...rest }) => {
         transform: `translate(-40%,-20%) skewX(-30deg) skewY(0deg) scale(0.675) rotate(0deg) translateZ(0)`,
       }}
       className={cn(
-        "p-4 flex md:w-fit  md:h-fit w-[80] h-[80] mx-auto ",
+        "p-4 flex md:w-fit  md:h-fit w-[80] h-fit mx-auto ",
         className
       )}
       {...rest}
@@ -77,9 +77,8 @@ export const Boxes = React.memo(BoxesCore);
 
 export default function FAQS() {
   return (
-    <section className="relative flex flex-col items-center justify-center max-w-screen">
-      {/* Fixed Content (Top) */}
-      <div className="text-center  px-6  text-white rounded-lg shadow-lg max-w-3xl mt-0 md:mt-10 mx-auto">
+    <section className="relative flex flex-col items-center justify-center max-w-screen ">
+      <div className="text-center  px-6  text-white rounded-lg shadow-lg max-w-3xl mt-0 md:mt-10 mx-auto ">
         <h2 className="text-3xl md:text-4xl font-semibold text-[#0cffb7]">
           Questions? We’ve Got You Covered!
         </h2>
@@ -96,15 +95,12 @@ export default function FAQS() {
             ftx@trustopay.com
           </a>
         </div>
-        <p className="mt-6 text-gray-300">
-          Get real-time updates—follow us on social media!
-        </p>
-      </div>
 
-      {/* Boxes Component (Below Content) */}
-      {/* <div className="absolute top-[100%] w-full">
-        <Boxes />
-      </div> */}
+        <button className="px-6 py-3 text-base font-medium rounded-lg bg-gradient-to-r from-[#FC6524] to-[#47EAA4] shadow-lg flex items-center gap-2 text-black transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#47EAA4] hover:to-[#FC6524] hover:gap-3 mx-auto mt-6 ">
+          Get Tickets
+          <ArrowRight size={20} />
+        </button>
+      </div>
     </section>
   );
 }
