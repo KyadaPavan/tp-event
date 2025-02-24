@@ -32,12 +32,11 @@ export default function Navbar() {
   };
 
   const navbarItems = [
-    { id: 1, title: "Services", href: "services" },
-    { id: 2, title: "Our work", href: "presentation" },
-    { id: 3, title: "About us", href: "ochi-team" },
-    { id: 4, title: "Insights", href: "insights" },
-    { id: 5, title: "Pricing", href: "pricing" },
-    { id: 6, title: "Contact us", href: "contact" },
+    { id: 1, title: "About", href: "about" },
+    { id: 2, title: "Speakers", href: "speakers" },
+    { id: 3, title: "Schedule", href: "schedule" },
+    { id: 4, title: "Pricing", href: "pricing" },
+    { id: 5, title: "FAQs", href: "faqs" },
   ];
 
   return (

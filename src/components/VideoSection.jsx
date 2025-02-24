@@ -20,7 +20,10 @@ export default function VideoSection() {
   }, [isOpen]);
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[#002324] p-0 md:pt-10 py-10 md:p-6 overflow-hidden">
+    <div
+      className="flex justify-center items-center min-h-screen bg-[#002324] p-0 md:pt-10 py-10 md:p-6 overflow-hidden"
+      id="about"
+    >
       <div className="w-full  md:max-w-[80%] p-6 md:p-8 text-center bg-gradient-to-r from-orange-500 to-green-400 rounded-2xl">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#002324] py-2">
           What is FTX

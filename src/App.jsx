@@ -22,6 +22,7 @@ import { HeroHighlight } from "./components/ui/Hero-highlight";
 import AnimatedCursor from "react-animated-cursor";
 import StickyScroll from "./components/ui/Sticky-scroll-reveal";
 import { ExpandableCardDemo } from "./components/ui/ExpandableCardDemo";
+import TextZoom from "./components/TextZoom";
 
 function App() {
   useEffect(() => {
@@ -107,6 +108,9 @@ function App() {
         <div className="hidden py-4 md:py-10 md:block ">
           <TextZoomScroll />
         </div>
+        {/* <div className="hidden py-4 md:py-10 md:block ">
+          <TextZoom />
+        </div> */}
 
         {/* <div className="py-4 md:py-10 scrollbar-hide max-w-screen">
           <ExpandableCardDemo />

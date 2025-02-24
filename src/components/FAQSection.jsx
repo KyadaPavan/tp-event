@@ -46,7 +46,7 @@ export default function FAQSection() {
   };
 
   return (
-    <div className="  max-w-5xl mx-auto p-6 text-white ">
+    <div className="  max-w-5xl mx-auto p-6 text-white " id="faqs">
       {/* Heading & Description */}
 
       <h2 className=" text-4xl font-semibold text-[#0cffb7] text-center md:text-5xl">

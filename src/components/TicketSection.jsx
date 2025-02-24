@@ -58,7 +58,10 @@ const TicketSection = () => {
     },
   ];
   return (
-    <section className="relative flex flex-col items-center justify-center   py-16 bg-white/10 backdrop-blur-md max-w-[90%] mx-auto rounded-3xl">
+    <section
+      className="relative flex flex-col items-center justify-center   py-16 bg-white/10 backdrop-blur-md max-w-[90%] mx-auto rounded-3xl"
+      id="pricing"
+    >
       {/* Date & Title */}
       <div className="z-10 text-center">
         <span className="px-4 py-1 text-sm font-semibold text-white rounded-full bg-white/30 backdrop-blur-md">

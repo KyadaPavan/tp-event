@@ -58,7 +58,7 @@ const MainGuest = () => {
 
   return (
     <>
-      <div className="text-white max-w-[80%] mx-auto">
+      <div className="text-white max-w-[80%] mx-auto" id="speakers">
         <div>
           <p className=" mx-auto text-5xl font-semibold text-center text-[#0cffb7]">
             Experience & Expertise, Live on Stage

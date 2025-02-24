@@ -1,6 +1,6 @@
 export default function TextHover({ titile1, titile2 }) {
   return (
-    <div className="overflow-hidden transition-all duration-200 ease-in-out cursor-pointer group">
+    <div className="overflow-hidden transition-all duration-200 ease-in-out  group">
       <div className="relative transition-all duration-500 ease-in-out">
         <div>
           <h1 className="translate-y-[0%] group-hover:translate-y-[-100%] absolute  left-0 transition-all ease-in-out duration-500">

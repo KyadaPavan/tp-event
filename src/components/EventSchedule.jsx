@@ -36,7 +36,9 @@ const scheduleData = [
 const EventTimeline = () => {
   return (
     <>
-      <Timeline data={scheduleData} />
+      <div id="schedule">
+        <Timeline data={scheduleData} />
+      </div>
     </>
   );
 };

@@ -13,7 +13,7 @@ const StatsSection = () => {
   return (
     <section className="relative w-full px-4 py-16 text-center text-white md:px-12">
       {/* Gradient Background */}
-      <div className="absolute inset-0 w-[70%] mx-auto h-[90%] bg-gradient-to-r from-[#FC6524] to-[#47EAA4] opacity-50 blur-3xl my-auto rounded-full"></div>
+      <div className="absolute inset-0 w-[70%] mx-auto h-[80%] bg-gradient-to-r from-[#fc6524c4] to-[#47EAA4] opacity-40 blur-3xl my-auto rounded-full"></div>
 
       {/* Subheading */}
       <div className="relative z-10 mb-12">
