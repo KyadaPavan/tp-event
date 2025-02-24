@@ -61,7 +61,7 @@ export default function MobileNav() {
             animate={{ y: 0 }}
             exit={{ y: "-100%" }}
             transition={{ duration: 1, ease: [0.3, 0.86, 0.36, 0.95] }}
-            className="fixed top-0 bottom-0 right-0 z-50 flex flex-col items-end justify-end w-full min-h-fit text-white bg-white/50 backdrop-blur-md bg-secondry"
+            className="fixed top-0 bottom-0 right-0 z-50 flex flex-col items-end justify-end w-full min-h-screen text-white bg-white/50 backdrop-blur-md bg-secondry"
           >
             <div className="w-full flex justify-between items-center h-[8vh] border-b border-[#f1f1f155] padding-x max-w-[90%] mx-auto mt-2 ">
               <ScrollLink to="home" smooth={true} duration={500}>
