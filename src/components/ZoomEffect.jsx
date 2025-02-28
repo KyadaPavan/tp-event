@@ -44,7 +44,7 @@
 //           </div>
 
 //           <h1 className="my-10 text-5xl font-bold text-gray-100 md:text-6xl">
-//             <span className="text-stroke">FTX</span>{" "}
+//             <span className="text-stroke">TechX</span>{" "}
 //             <span className="text-[30px]">by</span> <br /> Trustopay
 //           </h1>
 //           <p className="mt-4 text-lg md:text-xl text-gray-300/90">
@@ -54,7 +54,7 @@
 //           </p>
 
 //           <p className="mt-6 text-lg font-semibold text-gray-300">
-//             FTX 2025: <span className="text-[#FC6524]">&gt;Code</span>. More
+//             TechX 2025: <span className="text-[#FC6524]">&gt;Code</span>. More
 //             than Code.
 //           </p>
 
@@ -155,7 +155,7 @@ const ZoomEffect = () => {
   }, []);
 
   return (
-    <div className="h-full w-full bg-[#002324] dark:bg-grid-white/[0.02] bg-grid-black/[0.05] flex flex-col items-center justify-center">
+    <div className="h-full w-full dark:bg-grid-white/[0.02] bg-grid-black/[0.05] flex flex-col items-center justify-center">
       <section className="relative flex flex-col items-center w-full min-h-screen gap-20 px-6 pt-10 text-white md:px-12">
         {/* Header Section */}
         <div className="relative z-10 max-w-3xl text-center">
@@ -164,7 +164,7 @@ const ZoomEffect = () => {
           </div>
 
           <h1 className="my-10 text-5xl font-bold text-gray-100 md:text-6xl">
-            <span className="text-stroke">FTX</span>{" "}
+            <span className="text-stroke">TechX</span>{" "}
             <span className="text-[30px]">by</span> <br /> Trustopay
           </h1>
           <p className="mt-4 text-lg md:text-xl text-gray-300/90">
@@ -174,21 +174,21 @@ const ZoomEffect = () => {
           </p>
 
           <p className="mt-6 text-lg font-semibold text-gray-300">
-            FTX 2025: <span className="text-[#FC6524]">&gt;Code</span>. More
+            TechX 2025: <span className="text-[#D99BFF]">&gt;Code</span>. More
             than Code.
           </p>
 
           {/* Buttons */}
           <div className="flex flex-col items-center justify-center gap-8 mt-6 sm:flex-row">
-            <button className="px-6 py-3 text-base font-medium rounded-lg bg-gradient-to-r from-[#FC6524] to-[#47EAA4] shadow-lg flex items-center gap-2 text-black transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#47EAA4] hover:to-[#FC6524] hover:gap-3">
+            <button className="px-6 py-3 text-base font-medium rounded-lg bg-gradient-to-r from-[#6423C4] via-[#C358F4] to-[#CA8FFD] shadow-lg flex items-center gap-2 text-white transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#CA8FFD] hover:via-[#C358F4] hover:to-[#6423C4] hover:gap-3">
               Get Tickets
               <ArrowRight size={20} />
             </button>
 
             <button className="relative flex items-center gap-2 text-base font-medium transition group">
               Watch video review
-              <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-gradient-to-r from-[#FC6524] to-[#47EAA4]"></span>
-              <span className="w-6 h-6 flex items-center justify-center bg-gradient-to-r from-[#FC6524] to-[#47EAA4] rounded-full transition group-hover:shadow-xl group-hover:shadow-orange-500/50">
+              <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-gradient-to-r from-[#6423C4] via-[#C358F4] to-[#CA8FFD]"></span>
+              <span className="w-6 h-6 flex items-center justify-center bg-gradient-to-r from-[#6423C4] via-[#C358F4] to-[#CA8FFD] rounded-full transition group-hover:shadow-xl group-hover:shadow-purple-500/50">
                 <Play size={14} color="white" />
               </span>
             </button>
@@ -207,7 +207,7 @@ const ZoomEffect = () => {
             >
               <Link
                 to={item.link}
-                className="flex items-center gap-2 text-lg font-semibold transition-all duration-100 ease-in-out hover:text-orange-500 group hover:drop-shadow-md hover:drop-shadow-orange-500/50"
+                className="flex items-center gap-2 text-lg font-semibold transition-all duration-100 ease-in-out hover:text-[#CA8FFD]  group hover:drop-shadow-md hover:drop-shadow-orange-500/50"
               >
                 {item.title}
                 <ArrowRight

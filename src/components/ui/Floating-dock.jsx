@@ -1,5 +1,4 @@
 import { cn } from "../libs/utils";
-
 import {
   AnimatePresence,
   motion,
@@ -51,9 +50,9 @@ const FloatingDockMobile = ({ items, className }) => {
                 <Link
                   to={item.href}
                   key={item.title}
-                  className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-[#FC6524] to-[#47EAA4]"
+                  className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-[#6423C4] via-[#CA8FFD] to-[#C358F4]   "
                 >
-                  <div className="w-4 h-4">{item.icon}</div>
+                  <div>{item.icon}</div>
                 </Link>
               </motion.div>
             ))}
@@ -62,7 +61,7 @@ const FloatingDockMobile = ({ items, className }) => {
       </AnimatePresence>
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center h-10 text-white rounded-full justify-evenly w-28 bg-gradient-to-r from-[#FC6524] to-[#47EAA4] "
+        className="flex items-center h-10 text-white rounded-full justify-evenly w-28 bg-gradient-to-r from-[#6423C4] via-[#CA8FFD] to-[#C358F4]   "
       >
         Socials <ArrowUp size={20} />
       </button>
@@ -138,7 +137,7 @@ function IconContainer({ mouseX, title, icon, href }) {
         style={{ width, height }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
-        className="relative flex items-center justify-center bg-gradient-to-r from-[#FC6524] to-[#47EAA4] rounded-full aspect-square "
+        className="relative flex items-center justify-center bg-gradient-to-r from-[#6423C4] via-[#CA8FFD] to-[#C358F4]    rounded-full aspect-square "
       >
         <AnimatePresence>
           {hovered && (
@@ -146,7 +145,7 @@ function IconContainer({ mouseX, title, icon, href }) {
               initial={{ opacity: 0, y: 10, x: "-50%" }}
               animate={{ opacity: 1, y: 0, x: "-50%" }}
               exit={{ opacity: 0, y: 2, x: "-50%" }}
-              className="px-2 py-0.5 whitespace-pre rounded-md bg-white/20 backdrop-blur-md border   dark:text-white border-[#47EAA4] text-neutral-700 absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xs"
+              className="px-2 py-0.5 whitespace-pre rounded-md bg-white/20 backdrop-blur-md border   dark:text-white border-[#D99BFF] text-neutral-700 absolute left-1/2 -translate-x-1/2 -top-8 w-fit text-xs"
             >
               {title}
             </motion.div>

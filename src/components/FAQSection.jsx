@@ -20,7 +20,7 @@ const faqs = [
   {
     question: "Can I attend the conference virtually?",
     answer:
-      "Absolutely! FTX’25 will be broadcasted live on various platforms, allowing you to attend virtually. Virtual conference attendees will have access to a link to join the event.",
+      "Absolutely! TechX’25 will be broadcasted live on various platforms, allowing you to attend virtually. Virtual conference attendees will have access to a link to join the event.",
   },
   {
     question:
@@ -46,37 +46,37 @@ export default function FAQSection() {
   };
 
   return (
-    <div className="  max-w-5xl mx-auto p-6 text-white " id="faqs">
+    <div className="max-w-5xl p-6 mx-auto text-white " id="faqs">
       {/* Heading & Description */}
 
-      <h2 className=" text-4xl font-semibold text-[#0cffb7] text-center md:text-5xl">
+      <h2 className=" text-4xl font-semibold text-[#D99BFF] text-center md:text-5xl">
         Frequently Asked Questions
       </h2>
-      <p className="text-center text-gray-200 mt-8 px-2">
+      <p className="px-2 mt-8 text-center text-gray-200">
         We are here to help with any questions. If you need further assistance,
         contact us at &nbsp;
         <a
           href="mailto:support@example.com"
-          className="text-[#0cffb7] hover:underline"
+          className="text-[#D99BFF] hover:underline"
         >
           support@example.com
         </a>
       </p>
 
       {/* FAQs */}
-      <div className="mt-16 space-y-4 relative">
+      <div className="relative mt-16 space-y-4">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="bg-white/30 backdrop-blur-md rounded-lg shadow-md overflow-hidden border border-[#47EAA4]"
+            className="bg-white/30 backdrop-blur-md rounded-lg shadow-md overflow-hidden border border-[#D99BFF]"
           >
             {/* Question */}
             <button
-              className="w-full text-left p-4 flex items-center justify-between text-base md:text-lg font-medium"
+              className="flex items-center justify-between w-full p-4 text-base font-medium text-left md:text-lg"
               onClick={() => toggleFAQ(index)}
             >
               <span className="flex-1">{faq.question}</span>
-              <span className="w-6 flex items-center justify-center">
+              <span className="flex items-center justify-center w-6">
                 {openIndex === index ? (
                   <FaChevronUp className="text-gray-400" size={15} />
                 ) : (
@@ -93,12 +93,12 @@ export default function FAQSection() {
                   : "max-h-0 opacity-0 p-0"
               }`}
             >
-              <p className="text-gray-100 md:text-base text-sm">{faq.answer}</p>
+              <p className="text-sm text-gray-100 md:text-base">{faq.answer}</p>
             </div>
           </div>
         ))}
 
-        <div className="absolute top-0  w-[90%] h-[100%] bg-gradient-to-r from-[#047059] to-[#47EAA4] opacity-50 blur-3xl rounded-full z-[-20]"></div>
+        <div className="absolute top-0  w-[90%] h-[100%] bg-gradient-to-r from-[#9D6BDF] to-[#CA8FFD] opacity-50 blur-3xl rounded-full z-[-20]"></div>
       </div>
     </div>
   );

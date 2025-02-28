@@ -32,9 +32,9 @@ export default function SponsorSection() {
       {/* Sponsor Text */}
       <motion.div
         style={{ x: textX }}
-        className="text-[12vw] md:text-[8vw] font-bold text-[#0cffb7] text-stroke-main uppercase whitespace-nowrap"
+        className="text-[14vw] md:text-[8vw] font-bold text-[#CA8FFD] text-stroke-main uppercase whitespace-nowrap"
       >
-        FTX Sponsors
+        TechX Sponsors
       </motion.div>
 
       {/* Logos Container */}
@@ -43,7 +43,7 @@ export default function SponsorSection() {
           <div
             key={i}
             className="flex items-center justify-center bg-white shadow-md rounded-xl
-                       shadow-[#0cffb7] p-4 md:p-6 w-28 h-16 md:w-40 md:h-24"
+                       shadow-[#ca8ffdc5] p-4 md:p-6 w-28 h-16 md:w-40 md:h-24"
           >
             <img
               src={src}
@@ -92,7 +92,7 @@ export default function SponsorSection() {
 //           style={{ x: textX }}
 //           className="text-[10vw] md:text-[8vw] font-bold text-[#0cffb7] uppercase whitespace-nowrap text-stroke-main"
 //         >
-//           FTX Sponsors
+//           TechX Sponsors
 //         </motion.div>
 
 //         {/* Logos Container */}

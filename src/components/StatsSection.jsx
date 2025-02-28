@@ -13,17 +13,17 @@ const StatsSection = () => {
   return (
     <section className="relative w-full px-4 py-16 text-center text-white md:px-12">
       {/* Gradient Background */}
-      <div className="absolute inset-0 w-[70%] mx-auto h-[80%] bg-gradient-to-r from-[#fc6524c4] to-[#47EAA4] opacity-40 blur-3xl my-auto rounded-full"></div>
+      <div className="absolute inset-0 w-[70%] mx-auto h-[80%] bg-gradient-to-r from-[#6423C4] via-[#C358F4] to-[#CA8FFD] opacity-40 blur-3xl my-auto rounded-full"></div>
 
       {/* Subheading */}
       <div className="relative z-10 mb-12">
-        <p className="inline-block px-2 py-2 text-xs font-medium tracking-widest uppercase rounded-full cursor-pointer md:px-4 md:text-sm text-[#0cffb7] bg-white/30 backdrop-blur-md ">
+        <p className="inline-block px-2 py-2 text-xs font-medium tracking-widest uppercase rounded-full cursor-pointer md:px-4 md:text-sm text-[#D99BFF] bg-white/30 backdrop-blur-md ">
           Bringing the Brightest Minds Together
         </p>
       </div>
 
       {/* Main Heading */}
-      <h2 className="relative z-10 !mb-20 text-4xl font-semibold md:text-5xl text-[#0cffb7]">
+      <h2 className="relative z-10 !mb-20 text-4xl font-semibold md:text-5xl text-[#D99BFF]">
         FTX in Numbers
       </h2>
 

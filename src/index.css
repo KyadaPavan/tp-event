@@ -11,7 +11,10 @@
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    background-color: #002324;
+    /* background-color: #3C1F4C; */
+    /* background-color: #1A0B28; */
+    /* background-color: #201530; */
+    background-color: #1E1033;
   }
 
   *,
@@ -206,33 +209,6 @@ body {
 
 
 
-.line-through {
-  text-decoration: line-through;
-}
-
-.svg-path {
-  stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation: draw 4s linear infinite;
-}
-
-@keyframes draw {
-  0% {
-    stroke-dashoffset: 1000;
-  }
-
-  50% {
-    stroke-dashoffset: 0;
-  }
-
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-.animate-svg {
-  animation: draw 4s linear infinite, pause 2s linear infinite;
-}
 
 @keyframes pause {
 
@@ -247,13 +223,6 @@ body {
 }
 
 
-.moving-slider-container {
-  max-width: 1520px;
-  margin: 0 auto;
-}
-
-
-
 @layer components {
   .image {
     -webkit-mask-image: url('/o-mask-crop.png');
@@ -263,13 +232,25 @@ body {
     width: 100vh;
   }
 
-  .image-fxt {
+  /* .image-fxt {
     -webkit-mask-image: url('/FTX-Mask.png');
     -webkit-mask-position: center;
     -webkit-mask-repeat: no-repeat;
     height: 100vh;
     width: 100vh;
+  } */
+
+  .image-fxt {
+    -webkit-mask-image: url('/FTX-Mask.png');
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    height: 100vh;
+    width: 100vw;
+
+    /* Ensure visibility */
   }
+
 
   .image-mobile {
     -webkit-mask-image: url('/circle-mask-mobile2.png');
@@ -309,7 +290,7 @@ body {
 
   .text-stroke-main {
     -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-color: #0cffb7;
+    -webkit-text-stroke-color: #D99BFF;
     -webkit-text-stroke-width: 1px;
   }
 
@@ -341,6 +322,7 @@ body {
   animation: bounce 2s infinite;
 }
 
+/* 
 
 ::-webkit-scrollbar {
   width: 8px;
@@ -366,6 +348,46 @@ html {
 
 html.dark-mode {
   --cursor-color: #ffffff
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+} */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E5D9F2;
+  /* Light purple */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8234C5, #B794F6);
+  /* Dark to light purple */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #B794F6, #8234C5);
+  /* Reverse gradient on hover */
+}
+
+html {
+  --cursor-color: white;
+  /* Light purple */
+}
+
+html.dark-mode {
+  --cursor-color: white;
+  /* Dark purple */
 }
 
 .scrollbar-hide {

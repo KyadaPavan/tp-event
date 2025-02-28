@@ -41,18 +41,14 @@ const Circlezoom = () => {
     <div className="relative w-screen h-screen overflow-hidden">
       {/* Background Fix */}
 
-      <div
-        className="absolute top-0 left-0 bg-[#002324] h-full w-full z-0"
-        ref={bg1}
-      ></div>
+      <div className="absolute top-0 left-0 z-0 w-full h-full" ref={bg1}></div>
 
       <div>
         <Spotlight
           className="h-screen top-8 left-10 md:-left-40 md:-top-20"
-          fill="#FC6524"
+          fill="#C358F4"
         />
-
-        <Spotlight className="h-screen left-20 -top-8" fill="#47EAA4" />
+        <Spotlight className="h-screen right-20 top-16" fill="#CA8FFD" />
       </div>
 
       <section className="relative flex items-center justify-center w-screen h-screen">
@@ -69,7 +65,8 @@ const Circlezoom = () => {
           /> */}
 
           <div
-            className="bg-gradient-to-r from-[#FC6524] to-[#47EAA4] md:w-[60%] w-[70%]  image "
+            className="bg-gradient-to-r from-[#6423C4] via-[#CA8FFD] to-[#C358F4]   
+           md:w-[60%] w-[70%]  image "
             ref={img}
           ></div>
 
@@ -79,7 +76,7 @@ const Circlezoom = () => {
               ref={text1}
               className="lg:text-[130px] md:text-[100px] text-[50px] font-bold text-center leading-none"
             >
-              <span className="text-stroke">FTX</span>{" "}
+              <span className="text-stroke">TechX</span>{" "}
               <span className="md:text-[40px] text-[20px]">by</span> <br />{" "}
               Trustopay
             </h1>

@@ -4,8 +4,6 @@ import Navbar from "./components/Navbar";
 import { useEffect } from "react";
 import ZoomEffect from "./components/ZoomEffect";
 import VideoSection from "./components/VideoSection";
-import TabbedSection from "./components/TabbedSection";
-import StatsSection from "./components/StatsSection";
 import EventSchedule from "./components/EventSchedule";
 import MainGuest from "./components/MainGuest";
 import Speakers from "./components/Speaker";
@@ -48,6 +46,19 @@ function App() {
             outerStyle={{
               border: "3px solid var(--cursor-color)",
             }}
+            clickables={[
+              {
+                target: ".custom",
+                options: {
+                  innerSize: 8,
+                  outerSize: 8,
+                  color: "255, 255, 255",
+                  outerAlpha: 0.3,
+                  innerScale: 0.7,
+                  outerScale: 5,
+                },
+              },
+            ]}
           />
         </div>
         <Navbar />
@@ -99,12 +110,6 @@ function App() {
           />
         </div>
 
-        {/* <div className="py-4 md:py-10">
-          <TabbedSection />
-        </div> */}
-        {/* <div className="py-4 md:py-10">
-          <StatsSection />
-        </div> */}
         <div className="hidden py-4 md:py-10 md:block ">
           <TextZoomScroll />
         </div>
@@ -115,12 +120,12 @@ function App() {
         {/* <div className="py-4 md:py-10 scrollbar-hide max-w-screen">
           <ExpandableCardDemo />
         </div> */}
-        <div className="hidden py-4 md:py-10 md:block ">
+        {/* <div className="hidden py-4 md:py-10 md:block ">
           <MainGuest />
         </div>
         <div className="block py-10 md:py-10 md:hidden">
           <Speakers />
-        </div>
+        </div> */}
         <div className="py-4 md:py-10">
           <EventSchedule />
         </div>
@@ -152,11 +157,11 @@ function App() {
         </div>
 
         <div
-          className="relative h-[840px] hidden md:block"
+          className="relative h-[520px] hidden md:block"
           style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
         >
-          <div className="relative h-[calc(100vh+800px)] -top-[100vh]">
-            <div className="h-[800px] sticky top-[calc(100vh-800px)]">
+          <div className="relative h-[calc(100vh+480px)] -top-[100vh]">
+            <div className="h-[480px] sticky top-[calc(100vh-480px)]">
               <Footer />
             </div>
           </div>

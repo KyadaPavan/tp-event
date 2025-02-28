@@ -3,8 +3,10 @@ import { motion } from "framer-motion";
 
 const StickyScroll = ({ content = [] }) => {
   const containerRef = useRef(null);
-  const sectionRefs = useRef([]); // Store refs for each text section
+  const sectionRefs = useRef([]);
+  const titleRef = useRef(null);
   const [activeCard, setActiveCard] = useState(0);
+  const [titleSticky, setTitleSticky] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +20,22 @@ const StickyScroll = ({ content = [] }) => {
       });
 
       setActiveCard(index);
+
+      if (titleRef.current) {
+        const titleRect = titleRef.current.getBoundingClientRect();
+        const lastSectionRect =
+          sectionRefs.current[
+            sectionRefs.current.length - 1
+          ]?.getBoundingClientRect();
+
+        if (lastSectionRect) {
+          if (lastSectionRect.top <= 0) {
+            setTitleSticky(false);
+          } else {
+            setTitleSticky(true);
+          }
+        }
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -26,30 +44,35 @@ const StickyScroll = ({ content = [] }) => {
 
   return (
     <div className="relative max-w-6xl mx-auto" ref={containerRef}>
-      <div className="sticky top-16">
-        <p className="mx-auto md:text-5xl  text-3xl font-semibold text-center text-[#0cffb7] bg-white/20  md:backdrop-blur-md backdrop-blur-lg md:w-fit w-[90%] md:px-4 px-0  py-4 rounded-2xl">
+      {/* Title */}
+      <div
+        ref={titleRef}
+        className={`z-10 ${titleSticky ? "sticky top-16" : "relative"}`}
+      >
+        <p className="mx-auto md:text-5xl text-3xl font-semibold text-center text-[#CA8FFD] bg-white/20 md:backdrop-blur-md backdrop-blur-lg md:w-fit w-[90%] md:px-4 px-0 py-4 rounded-md">
           Why This Event Matters for You
         </p>
       </div>
 
-      <div className="flex flex-col lg:flex-row md:h-[200vh] h-[170vh] ">
+      {/* Scroll Sections */}
+      <motion.div className="flex flex-col lg:flex-row md:h-[200vh] h-[170vh]">
         {/* Left Side - Scrolling Text Content */}
         <div className="relative flex flex-col justify-center space-y-24 lg:w-1/2">
           {content.map((item, index) => (
             <div
               key={item.id}
               ref={(el) => (sectionRefs.current[index] = el)}
-              className="px-6 text-section "
+              className="px-6 text-section"
             >
               <motion.h2
-                className="text-3xl font-bold text-[#0cffb7]"
-                animate={{ opacity: activeCard === index ? 1 : 0.3 }}
+                className="text-3xl font-bold text-[#CA8FFD]"
+                animate={{ opacity: activeCard === index ? 1 : 0 }}
               >
                 {item.title}
               </motion.h2>
               <motion.p
                 className="mt-4 text-lg text-gray-300"
-                animate={{ opacity: activeCard === index ? 1 : 0.3 }}
+                animate={{ opacity: activeCard === index ? 1 : 0 }}
               >
                 {item.description}
               </motion.p>
@@ -58,7 +81,7 @@ const StickyScroll = ({ content = [] }) => {
         </div>
 
         {/* Right Side - Sticky Image Container */}
-        <div className="sticky top-0 items-center justify-center h-screen z-[-4] md:flex hidden">
+        <div className="sticky top-0 items-center justify-center hidden h-screen md:flex -z-[4]">
           <motion.img
             key={content[activeCard]?.id}
             src={content[activeCard]?.image}
@@ -69,7 +92,7 @@ const StickyScroll = ({ content = [] }) => {
             transition={{ duration: 0.2 }}
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

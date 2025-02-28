@@ -1,7 +1,6 @@
 import { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Spotlight } from "./ui/Spotlight";
 import StatsSection from "./StatsSection";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -39,10 +38,10 @@ const TextZoom = () => {
   }, []);
 
   return (
-    <div className=" w-screen h-screen overflow-hidden">
+    <div className="w-screen h-screen overflow-hidden ">
       {/* Background Fix */}
 
-      <div className="absolute top-0 left-0  h-full w-full z-0" ref={bg1}></div>
+      <div className="absolute top-0 left-0 z-0 w-full h-full" ref={bg1}></div>
 
       <section className="relative flex items-center justify-center w-screen h-screen">
         <div
@@ -57,8 +56,7 @@ const TextZoom = () => {
             className="w-full h-full image"
           /> */}
 
-          <div className=" md:w-[60%] w-[70%]  image-fxt" ref={img}>
-            {" "}
+          <div className=" md:w-[80%] w-[70%]  image-fxt" ref={img}>
             <StatsSection />
           </div>
 
@@ -70,3 +68,70 @@ const TextZoom = () => {
 };
 
 export default TextZoom;
+
+// import React, { useRef, useEffect } from "react";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import StatsSection from "./StatsSection";
+
+// gsap.registerPlugin(ScrollTrigger);
+
+// const TextZoom = () => {
+//   const sectionRef = useRef(null);
+//   const maskRef = useRef(null);
+//   const statsRef = useRef(null); // Ref for the stats section
+
+//   useEffect(() => {
+//     let mm = gsap.matchMedia();
+
+//     mm.add("(min-width: 768px)", () => {
+//       gsap.context(() => {
+//         gsap.to(maskRef.current, {
+//           scale: 8, // Zoom effect
+//           opacity: 0, // Fade out completely
+//           ease: "none",
+//           transformOrigin: "center",
+//           scrollTrigger: {
+//             trigger: sectionRef.current,
+//             start: "top top",
+//             end: "bottom top",
+//             scrub: 0.5,
+//             pin: true,
+//             anticipatePin: 1,
+//           },
+//         });
+
+//         // Ensure stats section is fully visible throughout
+//         gsap.set(statsRef.current, {
+//           opacity: 1, // Ensure it's always visible
+//         });
+//       });
+//     });
+
+//     return () => mm.revert();
+//   }, []);
+
+//   return (
+//     <div className="relative h-screen overflow-hidden">
+//       <section
+//         ref={sectionRef}
+//         className="absolute flex items-center justify-center "
+//       >
+//         <div
+//           className="absolute inset-0 "
+//           ref={maskRef}
+//           style={{ opacity: 1 }} // Ensures visibility at start
+//         ></div>
+//         <div
+//           ref={statsRef}
+//           className="absolute z-10 flex items-center justify-center w-full h-full image-fxt "
+//         >
+//           <StatsSection />
+//         </div>
+//         {/* Stats Section Fully Visible */}
+//       </section>
+//     </div>
+//   );
+// };
+
+// export default TextZoom;

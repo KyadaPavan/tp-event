@@ -6,7 +6,7 @@ const TicketSection = () => {
     {
       title: "Standard Pass",
       price: "₹2,000",
-      color: "text-green-400",
+      color: "text-[#CA8FFD]",
       available: [
         "2-Day Conference Pass",
         "Access to Multiple Stages",
@@ -24,14 +24,13 @@ const TicketSection = () => {
     {
       title: "All Access Pass",
       price: "₹3,000",
-      color: "text-orange-400",
+      color: "text-[#C358F4]",
       available: [
         "2-Day Conference Pass",
         "Access to Multiple Stages",
         "Access to Exhibition Area",
         "Lunch & Refreshments Included",
         "Access Evening Social Events",
-
         "2-Day Virtual Conference Pass",
         "Access to All Streaming Sessions",
         "Access to Virtual Networking",
@@ -50,7 +49,6 @@ const TicketSection = () => {
         "Access to Exhibition Area",
         "Lunch & Refreshments Included",
         "Access Evening Social Events",
-
         "Access to All Streaming Sessions",
         "Access to Virtual Networking",
         "Access to All Recorded Sessions",
@@ -65,10 +63,10 @@ const TicketSection = () => {
       {/* Date & Title */}
       <div className="z-10 text-center">
         <span className="px-4 py-1 text-sm font-semibold text-white rounded-full bg-white/30 backdrop-blur-md">
-          14 - 16 SEPTEMBER 2025
+          15 MARCH 2025
         </span>
-        <h2 className="mt-8 text-4xl font-semibold text-[#0cffb7] md:text-5xl">
-          Get Your Tickets for FTX 2025
+        <h2 className="mt-8 text-4xl font-semibold text-[#CA8FFD] md:text-5xl">
+          Get Your Tickets for TechX 2025
         </h2>
         <p className="mt-4 text-base text-gray-300 md:text-lg">
           Dive into the world of IT and software development. Secure your ticket
@@ -81,7 +79,7 @@ const TicketSection = () => {
         {plans.map((plan, index) => (
           <div
             key={index}
-            className="flex flex-col w-[90%]  p-6 text-white bg-[#002324] rounded-2xl md:w-1/4"
+            className="flex flex-col w-[90%]  p-6 text-white bg-[#3C1F4C] rounded-2xl md:w-1/4"
           >
             <h3 className={`text-xl text-center font-semibold ${plan.color}`}>
               {plan.title}
@@ -108,7 +106,7 @@ const TicketSection = () => {
               ))}
             </ul>
 
-            <button className="px-6 mt-6 py-3 text-base font-medium rounded-lg bg-gradient-to-r from-[#FC6524] to-[#47EAA4] shadow-lg shadow-[#FC652466] flex items-center gap-2 text-black transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#47EAA4] hover:to-[#FC6524] hover:shadow-lg hover:shadow-[#47EAA466] hover:gap-3 text-center mx-auto ">
+            <button className="px-6 mt-6 py-3 text-base font-medium rounded-lg  shadow-md shadow-[#ca8ffdd5] flex items-center gap-2 text-white transition-all duration-300 ease-in-out bg-gradient-to-r from-[#6423C4] via-[#C358F4] to-[#CA8FFD]   hover:bg-gradient-to-r hover:from-[#CA8FFD] hover:via-[#C358F4] hover:to-[#6423C4] hover:shadow-md hover:shadow-[#ca8ffda8] hover:gap-3 text-center mx-auto ">
               Get Tickets
               <ArrowRight size={20} />
             </button>
@@ -116,7 +114,7 @@ const TicketSection = () => {
         ))}
       </div>
 
-      <div className="absolute bottom-0  w-[70%] mx-auto h-[90%] bg-gradient-to-r from-[#FC6524] to-[#47EAA4] opacity-50 blur-3xl my-auto rounded-full"></div>
+      <div className="absolute bottom-0  w-[70%] mx-auto h-[90%] bg-gradient-to-r from-[#6423C4] via-[#C358F4] to-[#CA8FFD] opacity-50 blur-3xl my-auto rounded-full"></div>
     </section>
   );
 };

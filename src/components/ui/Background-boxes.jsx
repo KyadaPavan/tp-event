@@ -6,15 +6,14 @@ export const BoxesCore = ({ className, ...rest }) => {
   const rows = new Array(60).fill(1);
   const cols = new Array(15).fill(1);
   let colors = [
-    "--teal-300",
-    "--teal-500",
-    "--orange-400",
-    "--orange-600",
-    "--green-300",
-    "--green-500",
-    "--emerald-400",
-    "--cyan-400",
-    "--lime-400",
+    "--purple-300",
+    "--purple-500",
+    "--violet-400",
+    "--violet-600",
+    "--fuchsia-300",
+    "--fuchsia-500",
+    "--indigo-400",
+    "--indigo-600",
   ];
 
   const getRandomColor = () => {
@@ -35,7 +34,7 @@ export const BoxesCore = ({ className, ...rest }) => {
       {rows.map((_, i) => (
         <motion.div
           key={`row` + i}
-          className="w-16 h-8 border-l border-slate-700 relative"
+          className="relative w-16 h-8 border-l border-slate-700"
         >
           {cols.map((_, j) => (
             <motion.div
@@ -47,7 +46,7 @@ export const BoxesCore = ({ className, ...rest }) => {
                 transition: { duration: 2 },
               }}
               key={`col` + j}
-              className="w-16 h-10 border-r border-t border-slate-700 relative"
+              className="relative w-16 h-10 border-t border-r border-[#d99bff6b]"
             >
               {j % 2 === 0 && i % 2 === 0 ? (
                 <svg
@@ -77,26 +76,26 @@ export const Boxes = React.memo(BoxesCore);
 
 export default function FAQS() {
   return (
-    <section className="relative flex flex-col items-center justify-center  ">
-      <div className="text-center  px-6  text-white rounded-lg shadow-lg max-w-3xl     mt-0 md:mt-10 mx-auto ">
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#0cffb7]">
+    <section className="relative flex flex-col items-center justify-center ">
+      <div className="max-w-3xl px-6 mx-auto mt-0 text-center text-white rounded-lg shadow-lg md:mt-10 ">
+        <h2 className="text-3xl md:text-4xl font-semibold text-[#D99BFF]">
           Questions? We’ve Got You Covered!
         </h2>
         <p className="mt-4 text-lg text-gray-300">
           Not sure about something? Whether it’s tickets, speakers, or schedule,
           we’re just an email away!
         </p>
-        <div className="mt-6 flex items-center justify-center gap-2 flex-wrap">
+        <div className="flex flex-wrap items-center justify-center gap-2 mt-6">
           <p className="text-lg font-medium">Send your Questions at</p>
           <a
             href="mailto:ftx@trustopay.com"
-            className="text-[#0cffb7] text-xl font-medium hover:underline"
+            className="text-[#D99BFF] text-xl font-medium hover:underline"
           >
-            ftx@trustopay.com
+            techx@trustopay.com
           </a>
         </div>
 
-        <button className="px-6 py-3 text-base font-medium rounded-lg bg-gradient-to-r from-[#FC6524] to-[#47EAA4] shadow-lg flex items-center gap-2 text-black transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#47EAA4] hover:to-[#FC6524] hover:gap-3 mx-auto mt-6 ">
+        <button className="px-6 py-3 text-base font-medium rounded-lg bg-gradient-to-r from-[#6423C4] via-[#C358F4] to-[#CA8FFD]  shadow-lg flex items-center gap-2 text-white transition-all duration-300 ease-in-out hover:bg-gradient-to-r hover:from-[#CA8FFD] hover:via-[#C358F4] hover:to-[#6423C4] hover:gap-3 mx-auto mt-6 ">
           Get Tickets
           <ArrowRight size={20} />
         </button>

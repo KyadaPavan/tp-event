@@ -21,25 +21,25 @@ export default function VideoSection() {
 
   return (
     <div
-      className="flex justify-center items-center min-h-screen bg-[#002324] p-0 md:pt-10 py-10 md:p-6 overflow-hidden"
+      className="flex items-center justify-center min-h-screen p-0 py-10 overflow-hidden md:pt-10 md:p-6"
       id="about"
     >
-      <div className="w-full  md:max-w-[80%] p-6 md:p-8 text-center bg-gradient-to-r from-orange-500 to-green-400 rounded-2xl">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#002324] py-2">
-          What is FTX
+      <div className="w-full  md:max-w-[80%] p-6 md:p-8 text-center bg-gradient-to-r from-[#6423C4] via-[#CA8FFD] to-[#C358F4] rounded-2xl">
+        <h2 className="py-2 text-3xl font-semibold text-white md:text-4xl lg:text-5xl">
+          What is TechX?
         </h2>
-        <p className="py-4 mt-3 text-base text-gray-900 md:text-lg">
-          <strong>Infobip FTX</strong> is a conference that gathers the global
-          developer community, delivering interactive, engaging, and exciting
-          content in a one-of-a-kind atmosphere. With a{" "}
+        <p className="py-4 mt-3 text-base text-white/80 md:text-lg">
+          <strong>Trustopay TechX</strong> is a conference that gathers the
+          global developer community, delivering interactive, engaging, and
+          exciting content in a one-of-a-kind atmosphere. With a{" "}
           <strong className="font-bold">
             focus on a unique and enjoyable experience
           </strong>
-          , FTX has become one of the biggest developer events in India.
+          , TechX has become one of the biggest developer events in India.
         </p>
 
         {/* Video Thumbnail with Play Button */}
-        <div className="relative mt-6">
+        <div className="relative py-2 mt-6">
           <img
             src="/video-img.jpg"
             alt="Conference"
@@ -50,10 +50,10 @@ export default function VideoSection() {
             onClick={() => setIsOpen(true)}
           >
             <motion.div
-              className="p-1 rounded-full md:p-4 bg-gradient-to-r from-orange-500 to-green-500"
+              className="p-1 rounded-full md:p-4 bg-gradient-to-r from-[#6423C4] via-[#C358F4] to-[#CA8FFD]"
               whileHover={{
                 scale: 1.1,
-                boxShadow: "0px 0px 20px rgba(255, 165, 0, 0.7)",
+                boxShadow: "0px 0px 20px rgba(202, 143, 253, 0.77)",
               }}
             >
               <svg
@@ -70,14 +70,14 @@ export default function VideoSection() {
 
       {/* Video Popup Modal */}
       {isOpen && (
-        <div className="fixed inset-0 z-[200] flex items-center justify-center bg-[#002324]">
+        <div className="fixed inset-0 z-[200] flex  items-center justify-center bg-[#3C1F4C]">
           <div className="relative w-full max-w-6xl p-4 md:p-6">
             <motion.button
               whileHover={{
                 scale: 1.1,
-                boxShadow: "0px 0px 20px rgba(255, 165, 0, 0.7)",
+                boxShadow: "0px 0px 20px rgba(202, 143, 253, 0.77)",
               }}
-              className="absolute p-2 rounded-full right-6 md:-right-8 md:top-4 -top-8 bg-gradient-to-r from-orange-500 to-green-500 w-fit"
+              className="absolute p-2 rounded-full right-6 md:-right-8 md:top-4 -top-8  bg-gradient-to-r from-[#6423C4] via-[#C358F4] to-[#CA8FFD] w-fit"
               onClick={() => setIsOpen(false)}
             >
               <X className="w-5 h-5 text-white md:w-6 md:h-6" />

@@ -60,7 +60,7 @@ const MainGuest = () => {
     <>
       <div className="text-white max-w-[80%] mx-auto" id="speakers">
         <div>
-          <p className=" mx-auto text-5xl font-semibold text-center text-[#0cffb7]">
+          <p className=" mx-auto text-5xl font-semibold text-center text-[#CA8FFD]">
             Experience & Expertise, Live on Stage
           </p>
         </div>
@@ -88,7 +88,7 @@ const MainGuest = () => {
                 key={guest.id}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
-                className="pt-10 pb-4 border-b cursor-pointer border-[#0cffb7]/40"
+                className="pt-10 pb-4 border-b cursor-pointer border-[#CA8FFD]/40"
               >
                 <p className="text-3xl capitalize">{guest.title}</p>
 

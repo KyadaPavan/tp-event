@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import { RiMenuFill } from "react-icons/ri";
 import { AnimatePresence, motion } from "framer-motion";
 import { Link as ScrollLink } from "react-scroll";
 export default function MobileNav() {
@@ -26,12 +26,11 @@ export default function MobileNav() {
   }, [prevScrollY]);
 
   const footernavbarItems = [
-    { id: 1, title: "Home", href: "/" },
-    { id: 2, title: "Services", href: "services" },
-    { id: 3, title: "Our work", href: "presentation" },
-    { id: 4, title: "About us", href: "ochi-team" },
-    { id: 5, title: "Insights", href: "insights" },
-    { id: 6, title: "Contact us", href: "contact" },
+    { id: 1, title: "About", href: "about" },
+    { id: 2, title: "Speakers", href: "speakers" },
+    { id: 3, title: "Schedule", href: "schedule" },
+    { id: 4, title: "Pricing", href: "pricing" },
+    { id: 5, title: "FAQs", href: "faqs" },
   ];
 
   return (
@@ -39,7 +38,7 @@ export default function MobileNav() {
       <div
         className={`${
           isScrollingDown ? "-top-20" : "top-0"
-        } w-full  justify-between items-center h-[8vh] padding-x flex lg:hidden max-w-[90%] mx-auto py-8`}
+        } w-full  justify-between items-center h-[8vh] padding-x flex lg:hidden max-w-[100%] mx-auto py-8 bg-white/10 backdrop-blur-[20px] px-4`}
       >
         <ScrollLink to="home" smooth={true} duration={500}>
           <img
@@ -49,7 +48,7 @@ export default function MobileNav() {
             height={170}
           />
         </ScrollLink>
-        <HiOutlineMenuAlt4
+        <RiMenuFill
           onClick={() => setToggle(true)}
           className="w-8 h-8 text-xl text-white cursor-pointer"
         />
@@ -77,7 +76,7 @@ export default function MobileNav() {
                 className="w-8 h-8 text-3xl cursor-pointer text-background"
               />
             </div>
-            <ul className="h-full w-full flex justify-center text-left flex-col gap-[10px] padding-x max-w-[90%] mx-auto">
+            <ul className="h-full w-full flex justify-start text-left flex-col  max-w-[90%] mx-auto items-center">
               {footernavbarItems.map((item) => (
                 <ScrollLink
                   key={item.id}
@@ -85,7 +84,7 @@ export default function MobileNav() {
                   smooth={true}
                   duration={500}
                   onClick={() => setToggle(false)}
-                  className="text-[40px] leading-[67px]  uppercase font-semibold tracking-[-.9] text-background"
+                  className="text-[26px] leading-[67px]  uppercase font-semibold tracking-[-.9] text-background"
                 >
                   {item.title}
                 </ScrollLink>
